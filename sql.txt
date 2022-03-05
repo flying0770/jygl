@@ -40116,23 +40116,23 @@ INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (81, N'Âô»õ²éÑ¯', N'Æ·Ãû', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (82, N'Âô»õ²éÑ¯', N'¹æ¸ñ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (82, N'Âô»õ²éÑ¯', N'¹æ¸ñ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (83, N'Âô»õ²éÑ¯', N'ÔËÊäµ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (83, N'Âô»õ²éÑ¯', N'ÔËÊäµ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (84, N'Âô»õ²éÑ¯', N'³µºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (84, N'Âô»õ²éÑ¯', N'³µºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 6, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (85, N'Âô»õ²éÑ¯', N'´æÁÏµØ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (85, N'Âô»õ²éÑ¯', N'´æÁÏµØ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 16, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (86, N'Âô»õ²éÑ¯', N'·¢ÁÏÔ±', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (86, N'Âô»õ²éÑ¯', N'ÊÕÁÏÔ±', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 17, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (87, N'Âô»õ²éÑ¯', N'Âô»õÊ±¼ä', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (87, N'Âô»õ²éÑ¯', N'Âô»õÊ±¼ä', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 11, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (88, N'Âô»õ²éÑ¯', N'ÍÐÔËµ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (88, N'Âô»õ²éÑ¯', N'ÍÐÔËµ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 3, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (89, N'Âô»õ²éÑ¯', N'µ¥¼Û', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (89, N'Âô»õ²éÑ¯', N'µ¥¼Û', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 15, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (90, N'Âô»õ²éÑ¯', N'½áËã·½Ê½', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (90, N'Âô»õ²éÑ¯', N'½áËã·½Ê½', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 8, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (91, N'½ø»õ²éÑ¯', N'½ø»õµ¥ºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
@@ -40156,7 +40156,7 @@ INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (101, N'Êµ¼Ê½ø»õ', N'½ø»õµ¥ºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (102, N'Âô»õ²éÑ¯', N'Âô»õµ¥ºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (102, N'Âô»õ²éÑ¯', N'Âô»õµ¥ºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 10, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (103, N'Îï×ÊºÏÍ¬', N'Æ·Ãû', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
@@ -40182,11 +40182,11 @@ INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (114, N'Îï×ÊºÏÍ¬', N'Á¥ÊôºÏÍ¬', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (115, N'Âô»õ²éÑ¯', N'ËÍ»õÈË', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (115, N'Âô»õ²éÑ¯', N'ËÍ»õÈË', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 7, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (116, N'½ø»õ²éÑ¯', N'Ë¾°õÔ±', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'select distinct Ë¾°õÔ± from cv_½ø»õµ¥_½ø»õµ¥', NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (117, N'Âô»õ²éÑ¯', N'Ë¾°õÔ±', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (117, N'Âô»õ²éÑ¯', N'Ë¾°õÔ±', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 14, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (118, N'Êµ¼Ê½ø»õ', N'Ë¾°õÔ±', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
@@ -40251,10 +40251,6 @@ GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (164, N'¼ÓÓÍ²éÑ¯', N'ÈÕÆÚ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (165, N'½ø»õ²éÑ¯', N'×°»õµØÖ·', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'select distinct ×°»õµØÖ· from cv_½ø»õµ¥_½ø»õµ¥', NULL, NULL, NULL, NULL, 0, 1, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (167, N'Âô»õ²éÑ¯', N'·¢»õµ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
-GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (168, N'Âô»õ²éÑ¯', N'·¢»õµØÖ·', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (169, N'Ó¦¸¶ÕÊÎñ²éÑ¯', N'µ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
@@ -40450,7 +40446,7 @@ INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (269, N'³ö»õ²éÑ¯', N'¾ßÌåÊ©¹¤µ¥Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'SELECT DISTINCT ¾ßÌåÊ©¹¤µ¥Î» FROM cv_·¢»õµ¥_·¢»õµ¥ LEFT JOIN cv_ÈÎÎñ_ÈÎÎñÄÚÈÝ ON cv_·¢»õµ¥_·¢»õµ¥.ÈÎÎñ±àºÅ = cv_ÈÎÎñ_ÈÎÎñÄÚÈÝ.ÈÎÎñ±àºÅ', NULL, NULL, NULL, NULL, 0, 1, 5, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
-INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (270, N'³ö»õ²éÑ¯', N'ÈÎÎñ±àºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'cv_·¢»õµ¥_·¢»õµ¥.ÈÎÎñ±àºÅ', N'SELECT DISTINCT ÈÎÎñ±àºÅ FROM cv_·¢»õµ¥_·¢»õµ¥', NULL, NULL, NULL, NULL, 0, 1, 6, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (270, N'³ö»õ²éÑ¯', N'ÈÎÎñ±àºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'SELECT DISTINCT ÈÎÎñ±àºÅ FROM cv_·¢»õµ¥_·¢»õµ¥', NULL, NULL, NULL, NULL, 0, 1, 6, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (271, N'³ö»õ²éÑ¯', N'ÄÚ²¿³µºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, N'SELECT DISTINCT ÄÚ²¿³µºÅ FROM cv_·¢»õµ¥_·¢»õµ¥', NULL, NULL, NULL, NULL, 0, 1, 7, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
@@ -40512,8 +40508,19 @@ INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50
 GO
 INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (300, N'ÀíÂÛÏûºÄ', N'Êµ¼Ê½½×¢·½Ê½', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 9, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
 GO
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (301, N'Âô»õ²éÑ¯', N'¹¤³ÌÃû³Æ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 4, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (302, N'Âô»õ²éÑ¯', N'Ê¹ÓÃ²¿Î»', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 5, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (303, N'Âô»õ²éÑ¯', N'ÈÎÎñ±àºÅ', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 9, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (304, N'Âô»õ²éÑ¯', N'½ø³§Ê±¼ä', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 12, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] ([id], [c50f0], [c50f1], [c50f2], [c50f3], [c50f4], [c50f5], [c50f6], [c50f7], [c50f8], [c50f9], [c50f10], [c8000f0], [c8000f1], [df0], [df1], [df2], [df3], [if0], [if1], [if2], [if3], [if4], [if5], [nf0], [nf1], [nf2], [nf3]) VALUES (305, N'Âô»õ²éÑ¯', N'³ö³§Ê±¼ä', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, NULL, 13, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+GO
 SET IDENTITY_INSERT [dbo].[xt_cha_xun_fen_zu_fang_shi] OFF
 GO
+
 
 
 
@@ -63226,61 +63233,6 @@ if not exists (select * from ÏµÍ³_½ÇÉ«ÓëÓÃ»§Ä£¿é where ½ÇÉ«='ÏúÊÛÄÚÇÚ' and ÓÃ»§Ä
 if not exists (select * from ÏµÍ³_½ÇÉ«ÓëÓÃ»§Ä£¿é where ½ÇÉ«='ÏµÍ³¹ÜÀíÔ±' and ÓÃ»§Ä£¿éÃû³Æ = '³ö»õÉ¾³ý')
 	insert into ÏµÍ³_½ÇÉ«ÓëÓÃ»§Ä£¿é(½ÇÉ«, ÓÃ»§Ä£¿éÃû³Æ) values('ÏµÍ³¹ÜÀíÔ±', '³ö»õÉ¾³ý')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if not exists (select * from ÏµÍ³_¿ª·¢Ä£¿é  where ¿ª·¢Ä£¿éÃû³Æ = 'Âô»õÌí¼Ó')
 	insert into ÏµÍ³_¿ª·¢Ä£¿é(¿ª·¢Ä£¿éÃû³Æ, ¿ª·¢´°Ìå±êÊ¶, Ê¹ÓÃ±êÖ¾) values('Âô»õÌí¼Ó', 'Âô»õÌí¼Ó', 1)
 if not exists(select * from ÏµÍ³_ÓÃ»§Ä£¿é where Ä£¿éÃû³Æ = 'Âô»õÌí¼Ó')
@@ -63381,4 +63333,840 @@ GO
 
 
 
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[saveÂô»õµ¥ÊÖ¹¤Ìí¼Ó]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[saveÂô»õµ¥ÊÖ¹¤Ìí¼Ó]
+GO
+CREATE PROCEDURE [dbo].[saveÂô»õµ¥ÊÖ¹¤Ìí¼Ó]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+
+	@Âô»õµ¥ºÅ varchar (50) OUTPUT,
+	@³µºÅ varchar (50) =null,
+	@Æ·Ãû varchar (50) =null,
+	@¹æ¸ñ varchar (50) =null,
+	@ÔËÊäµ¥Î» varchar (50) =null,
+	@ÍÐÔËµ¥Î» varchar (50) =null,
+	@´æÁÏµØ varchar (50) =null,
+	@ÊÕ»õµØÖ· varchar (50) =null,
+	@ÊÕÁÏÔ± varchar (50) =null,
+	@ËÍ»õÈË varchar (50) =null,
+	@Ë¾°õÔ± varchar (50) =null,
+	@Ð¶»õ·½Ê½ varchar (50) =null,
+	@½áËã·½Ê½ varchar (50) =null,
+	@ÖáÊý varchar (50) =null,
+	@µÀÂ·ÔËÊäÖ¤ºÅ varchar (50) =null,
+	@´ÓÒµ×Ê¸ñÖ¤ºÅ varchar (50) =null,
+	@¼ÝÊ»Ö¤ºÅ varchar (50) =null,
+	@¾»ÖØ´óÐ´ varchar (50) =null,
+	@ÕÛºÏ·½Êý´óÐ´ varchar (50) =null,
+	@ÊµÊÕ½ð¶î´óÐ´ varchar (50) =null,
+	@ÈÎÎñ±àºÅ varchar (50) =null,
+	@Ìáµ¥±àºÅ varchar (50) =null,
+	@ÔËÊä·½Ê½ varchar (50) =null,
+	@¹¤³ÌÃû³Æ varchar (50) =null,
+	@Ê¹ÓÃ²¿Î» varchar (50) =null,
+	@±¸×¢ varchar (200) =null,
+	@Âô»õÊ±¼ä Datetime =null,
+	@½ø³§Ê±¼ä Datetime =null,
+	@³ö³§Ê±¼ä Datetime =null,
+	@Ã«ÖØ decimal(18,2) =null,
+	@Æ¤ÖØ decimal(18,2) =null,
+	@¾»ÖØ decimal(18,2) =null,
+	@ÕÛºÏ·½Êý decimal(18,2) =null,
+	@µ¥¼Û decimal(18,2) =null,
+	@½ð¶î decimal(18,2) =null,
+	@ÊµÊÕ½ð¶î decimal(18,2) =null,
+	@ÔØÖØ decimal(18,2) =null,
+	@ÔË¾à decimal(18,2) =null,
+	@´´½¨ÈË varchar (50) =null,
+	@´´½¨¶Ë varchar (50) =null,
+
+	@ÒªÇóÐÞ¸ÄÈË varchar (50) =null,
+	@³ö´íÔ­Òò varchar (50) =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------ÅÐ¶ÏÊ±¼ä´ÁÊÇ·ñÒÑ¾­Ê¹ÓÃ¹ýÁË-------------------------
+	IF exists(SELECT 1 FROM ÏµÍ³_Ê±¼ä´Á WHERE sn=@sn)
+	BEGIN
+		SET @msg='´ËÊ±¼ä´ÁÒÑ¾­Ê¹ÓÃ£¬ÇëÖØÐÂ±£´æ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	--------------------------------¼ÇÂ¼Ê±¼ä´Á-------------------------------
+	INSERT INTO ÏµÍ³_Ê±¼ä´Á (sn,dt,msg,code) VALUES (@sn, getdate(), '¿ªÊ¼Ð´ÈëÊÖ¶¯´òÓ¡Êý¾Ý', 1)
+	
+	IF ISNULL(@³µºÅ, '') = ''
+	BEGIN
+		SET @msg='³µºÅ ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@Æ·Ãû, '') = ''
+	BEGIN
+		SET @msg='Æ·Ãû ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@¹æ¸ñ, '') = ''
+	BEGIN
+		SET @msg='¹æ¸ñ ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@ÔËÊäµ¥Î», '') = ''
+	BEGIN
+		SET @msg='ÔËÊäµ¥Î» ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	
+
+
+	IF ISNULL(@ÍÐÔËµ¥Î», '') = ''
+	BEGIN
+		SET @msg='ÍÐÔËµ¥Î» ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF NOT EXISTS(SELECT * FROM cv_Âô»õµ¥_Æ·Ãû WHERE Æ·Ãû = @Æ·Ãû)
+	BEGIN
+		SET @msg='Æ·Ãû  ÊäÈë´íÎó£¬Ö»ÄÜÊäÈëÖ¸¶¨Öµ¡£'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF NOT EXISTS(SELECT * FROM cv_Âô»õµ¥_Æ·ÃûÓë¹æ¸ñ WHERE Æ·Ãû = @Æ·Ãû AND ¹æ¸ñ = @¹æ¸ñ)
+	BEGIN
+		SET @msg='¹æ¸ñ  ÊäÈë´íÎó£¬Ö»ÄÜÊäÈëÖ¸¶¨Öµ¡£'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	DECLARE @ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨ varchar(50)
+	SELECT @ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨ = Öµ FROM cv_ÏµÍ³_²ÎÊýÉèÖÃ WHERE ÏîÄ¿ = 'ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨'
+	IF @ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨ = 'ÊÇ'
+	BEGIN
+		IF CHARINDEX(' ', @³µºÅ) > 0
+		BEGIN
+			SET @msg='²»ÄÜÔÚ³µºÅÖÐÊäÈë¿Õ¸ñ¡£'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+		IF LEN(@³µºÅ) < 7 
+		BEGIN
+			SET @msg='Çë½«³µºÅÊäÈëÕýÈ·£¬±ØÐëÊäÈë7Î»(°üÀ¨ºº×Ö)' + CHAR(10) + 'Çë²ÉÓÃÈçÏÂ¸ñÊ½:½úK12345'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+	END
+	
+	DECLARE @¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ varchar(50)
+	SELECT @¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ = Öµ FROM cv_ÏµÍ³_²ÎÊýÉèÖÃ WHERE ÏîÄ¿ = '¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ'
+	IF @¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ = 'ÊÇ'
+		IF ISNULL(@ÔØÖØ, 0) <= 0
+		BEGIN
+			SET @msg='ÖáÊýÓëÔØÖØÐÅÏ¢ÊäÈë´íÎó'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+
+	DECLARE @µ±Ç°Ê±¼ä VARCHAR(30)
+	SET @µ±Ç°Ê±¼ä = CONVERT(VARCHAR(30), GETDATE(), 120)
+
+	
+	--È¡Âô»õµ¥±àºÅ
+	SET @Âô»õµ¥ºÅ=dbo.getCodeForÂô»õµ¥(@Âô»õÊ±¼ä)
+
+	IF LEN(ISNULL(@Âô»õµ¥ºÅ, '')) < 5 
+	BEGIN
+		SET @msg='»ñÈ¡Âô»õµ¥±àºÅ´íÎó£¬²»ÄÜ±£´æÊý¾Ý'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+		IF ISNULL(@ÒªÇóÐÞ¸ÄÈË, '') = ''
+	BEGIN
+		SET @msg='ÒªÇóÐÞ¸ÄÈË   ±ØÐëÊäÈëÄÚÈÝ!'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@³ö´íÔ­Òò, '') = ''
+	BEGIN
+		SET @msg='³ö´íÔ­Òò   ±ØÐëÊäÈëÄÚÈÝ!'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	--¸ù¾ÝÈÎÎñ±àºÅ»ñÈ¡ºÏÍ¬±àºÅ
+	DECLARE @ºÏÍ¬±àºÅ VARCHAR(50)
+
+	IF ISNULL(@½áËã·½Ê½,'') = 'Í³Ò»½áËã'
+	BEGIN
+		IF ISNULL(@ÈÎÎñ±àºÅ, '') = ''
+		BEGIN
+			SET @msg='µ±Ê¹ÓÃ(Í³Ò»½áËãÊ±£¬±ØÑ¡ÊäÈëÈÎÎñ±àºÅ)'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+
+		SELECT @ºÏÍ¬±àºÅ = ºÏÍ¬±àºÅ FROM cv_ÈÎÎñ_ÈÎÎñÄÚÈÝ WHERE ÈÎÎñ±àºÅ = @ÈÎÎñ±àºÅ
+		IF ISNULL(@ºÏÍ¬±àºÅ, '') = ''
+		BEGIN
+			SET @msg='Ã»ÓÐ¸ÃÈÎÎñ±àºÅ£¬²»ÄÜ±£´æÊý¾Ý'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+		
+		IF ISNULL(@Ìáµ¥±àºÅ, '') != ''
+		BEGIN
+			DECLARE @Ìáµ¥ºÏÍ¬±àºÅ VARCHAR(50)
+			SELECT @Ìáµ¥ºÏÍ¬±àºÅ = ºÏÍ¬±àºÅ FROM cv_Âô»õµ¥_Ìáµ¥ WHERE Ìáµ¥±àºÅ = @Ìáµ¥±àºÅ
+			IF ISNULL(@Ìáµ¥ºÏÍ¬±àºÅ, '') != @ºÏÍ¬±àºÅ
+			BEGIN
+				SET @msg='ÄúËùÊäÈëµÄÌáµ¥±àºÅ²»ÊôÓÚÕâ¸öÈÎÎñ±àºÅ£¬ÊäÈë´íÎó'
+				UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+				RAISERROR (@msg,16,1)
+				RETURN
+			END
+		END
+	END
+
+	SET @¾»ÖØ´óÐ´ = dbo.f_num_chnÊýÁ¿(@¾»ÖØ)
+	SET @ÕÛºÏ·½Êý´óÐ´ = dbo.f_num_chnÊýÁ¿(@ÕÛºÏ·½Êý)
+	SET @ÊµÊÕ½ð¶î´óÐ´ = dbo.f_num_chn½ð¶î(@ÊµÊÕ½ð¶î)
+
+			
+
+	BEGIN TRAN
+	BEGIN TRY
+		IF EXISTS (SELECT * FROM cv_Âô»õµ¥_×î´ó±àºÅ where Ç°×º=left(@Âô»õµ¥ºÅ,8))
+			UPDATE cv_Âô»õµ¥_×î´ó±àºÅ SET ×î´ó±àºÅ=@Âô»õµ¥ºÅ where Ç°×º=left(@Âô»õµ¥ºÅ,8)
+		ELSE
+			INSERT into cv_Âô»õµ¥_×î´ó±àºÅ(×î´ó±àºÅ,Ç°×º) values(@Âô»õµ¥ºÅ,left(@Âô»õµ¥ºÅ,8))
+
+		INSERT INTO cv_Âô»õµ¥_Âô»õµ¥([Âô»õµ¥ºÅ],[³µºÅ],[Æ·Ãû],[¹æ¸ñ],[ÔËÊäµ¥Î»],[ÍÐÔËµ¥Î»],[´æÁÏµØ],[ÊÕ»õµØÖ·],[ÊÕÁÏÔ±],[ËÍ»õÈË],[Ë¾°õÔ±],
+			[Ð¶»õ·½Ê½],[½áËã·½Ê½],[½áËã±àºÅ],[ÖáÊý],[µÀÂ·ÔËÊäÖ¤ºÅ],[´ÓÒµ×Ê¸ñÖ¤ºÅ],[¼ÝÊ»Ö¤ºÅ],[¾»ÖØ´óÐ´],[ÕÛºÏ·½Êý´óÐ´],[ÊµÊÕ½ð¶î´óÐ´],
+			[±£´æÆ¤ÖØÊ±³µºÅ],[±£´æÆ¤ÖØÊ±Æ·Ãû],[±£´æÆ¤ÖØÊ±¹æ¸ñ],[±£´æÆ¤ÖØÊ±ÔËÊäµ¥Î»],[±£´æÆ¤ÖØÊ±ÍÐÔËµ¥Î»],[±£´æÆ¤ÖØÊ±Ð¶ÁÏµØ],[±£´æÆ¤ÖØÊ±×°»õµØÖ·],
+			[±£´æÆ¤ÖØÊ±ÊÕÁÏÔ±],[±£´æÆ¤ÖØÊ±ËÍ»õÈË],[±£´æÆ¤ÖØÊ±Ë¾°õÔ±],[±£´æÆ¤ÖØÊ±Ð¶»õ·½Ê½],[±£´æÆ¤ÖØÊ±Êý¾ÝÀ´Ô´],[±£´æÆ¤ÖØÊ±¹ý°õ·½Ê½],
+			[½ø³§³µÅÆÊ¶±ð0],[½ø³§³µÅÆÊ¶±ð1],[½ø³§³µÅÆÊ¶±ð2],[½ø³§³µÅÆÊ¶±ð3],[³ö³§³µÅÆÊ¶±ð0],[³ö³§³µÅÆÊ¶±ð1],[³ö³§³µÅÆÊ¶±ð2],[³ö³§³µÅÆÊ¶±ð3],
+			[·¢¿¨¿¨ºÅ],[·¢¿¨¿¨Æ¬ÀàÐÍ],[·¢¿¨±¾´Î½ø³§¹¤×÷],[·¢¿¨¿¨Æ¬×´Ì¬],[ÊÖ»úÁ¿¼ìÈË],[ÊÖ»úÁ¿¼ì½á¹û],[ÊÖ»úÁ¿¼ìÐ¶»õ·½Ê½],[ÊÖ»úÁ¿¼ì¿ÛË®·½Ê½],
+			[ÊÖ»úÁ¿¼ì¿ÛÔÓ·½Ê½],[ÊÖ»úÁ¿¼ìµØµã],[ÊÖ»úÁ¿¼ìÊäÈë¶Ë],[ÊÖ»úÖÊ¼ìÈË],[ÊÖ»úÖÊ¼ì½á¹û],[ÊÖ»úÖÊ¼ì¿ÛË®·½Ê½],[ÊÖ»úÖÊ¼ì¿ÛÔÓ·½Ê½],
+			[ÊÖ»úÖÊ¼ìµØµã],[ÊÖ»úÖÊ¼ìÊäÈë¶Ë],[ÊÖ»úÖÊ¼ìÏî1],[ÊÖ»úÖÊ¼ìÖµ1],[ÊÖ»úÖÊ¼ìÏî2],[ÊÖ»úÖÊ¼ìÖµ2],[ÊÖ»úÖÊ¼ìÏî3],[ÊÖ»úÖÊ¼ìÖµ3],
+			[ÊÖ»úÖÊ¼ìÏî4],[ÊÖ»úÖÊ¼ìÖµ4],[ÊÖ»úÖÊ¼ìÏî5],[ÊÖ»úÖÊ¼ìÖµ5],[ÊÖ»úÖÊ¼ìÏî6],[ÊÖ»úÖÊ¼ìÖµ6],[ÊÖ»úÖÊ¼ìÏî7],[ÊÖ»úÖÊ¼ìÖµ7],[ÊÖ»úÖÊ¼ìÏî8],
+			[ÊÖ»úÖÊ¼ìÖµ8],[ÊÖ»úÖÊ¼ìÏî9],[ÊÖ»úÖÊ¼ìÖµ9],[ÊÖ»úÖÊ¼ìÏî10],[ÊÖ»úÖÊ¼ìÖµ10],[ÊÖ»úÆ·Ãû],[ÊÖ»ú¹æ¸ñ],[ÊÖ»ú´æÁÏµØ],[³ÆÖØÊ±Êý¾ÝÀ´Ô´],
+			[ºÏÍ¬±àºÅ],[ÈÎÎñ±àºÅ],[Ìáµ¥±àºÅ],[ÔËÊä·½Ê½],[¹¤³ÌÃû³Æ],[Ê¹ÓÃ²¿Î»],[ÕÕÆ¬0],[ÕÕÆ¬1],[ÕÕÆ¬2],[ÕÕÆ¬3],[ÕÕÆ¬4],[ÕÕÆ¬5],[ÕÕÆ¬6],
+			[ÕÕÆ¬7],[ÕÕÆ¬8],[ÕÕÆ¬9],[ÕÕÆ¬10],[ÕÕÆ¬11],[ÊÖ»úÁ¿¼ìÕÕÆ¬0],[ÊÖ»úÁ¿¼ìÕÕÆ¬1],[ÊÖ»úÁ¿¼ìÕÕÆ¬2],[ÊÖ»úÁ¿¼ìÕÕÆ¬3],[ÊÖ»úÁ¿¼ìÕÕÆ¬4],
+			[ÊÖ»úÁ¿¼ìÕÕÆ¬5],[ÊÖ»úÖÊ¼ìÕÕÆ¬0],[ÊÖ»úÖÊ¼ìÕÕÆ¬1],[ÊÖ»úÖÊ¼ìÕÕÆ¬2],[ÊÖ»úÖÊ¼ìÕÕÆ¬3],[ÊÖ»úÖÊ¼ìÕÕÆ¬4],[ÊÖ»úÖÊ¼ìÕÕÆ¬5],[±¸×¢],
+			[±£´æÆ¤ÖØÊ±½ø³§Ê±¼ä],[Âô»õÊ±¼ä],[½ø³§Ê±¼ä],[³ö³§Ê±¼ä],[ÊÖ»úÁ¿¼ìÊ±¼ä],[ÊÖ»úÖÊ¼ìÊ±¼ä],[·¢¿¨Ê±¼ä],[½øÃÅË¢¿¨Ê±¼ä],[Ê×´Î¹ý°õÊ±¼ä],
+			[¶þ´Î¹ý°õÊ±¼ä],[³öÃÅË¢¿¨Ê±¼ä],[Ç©ÊÕÈÕÆÚ],[±£´æÆ¤ÖØÊ±´òÓ¡Æ±¾Ý±êÖ¾],[ÖØÁ¿Ð¡ÊýÎ»Êý],[ÕÛ·½Ð¡ÊýÎ»Êý],[ÊÖ»úÁ¿¼ì±êÖ¾],[ÊÖ»úÖÊ¼ì±êÖ¾],
+			[ÐÞ¸Ä±êÖ¾],[´òÓ¡´ÎÊý],[ºË¶Ô±êÖ¾],[ÕûÀí±êÖ¾],[ÕËÎñ±êÖ¾],[±£´æÆ¤ÖØÊ±ÊÇ·ñÖ±½Ó¿ÛÖØ],[À­ÔËÊ±³¤],[Ð¶ÁÏÊ±³¤],[¶àÌáµ¥±êÖ¾],
+			[±£´æÆ¤ÖØÊ±°õ·¿ÕÛËãÂÊ],[±£´æÆ¤ÖØÊ±°õ·¿º¬Ë®ÂÊ],[±£´æÆ¤ÖØÊ±°õ·¿¿ÛÔÓ],[±£´æÆ¤ÖØÊ±Îï×Ê²¿ÕÛËãÂÊ],[±£´æÆ¤ÖØÊ±Îï×Ê²¿º¬Ë®ÂÊ],
+			[±£´æÆ¤ÖØÊ±Îï×Ê²¿¿ÛÔÓ],[±£´æÆ¤ÖØÊ±³§¼ÒÃ«ÖØ],[±£´æÆ¤ÖØÊ±³§¼ÒÆ¤ÖØ],[±£´æÆ¤ÖØÊ±³§¼Ò¾»ÖØ],[±£´æÆ¤ÖØÊ±³§¼Ò·½Êý],[±£´æÆ¤ÖØÊ±Æ¤ÖØ],
+			[±£´æÆ¤ÖØÊ±Á¿],[±£´æÆ¤ÖØÊ±µ¥¼Û],[ÊÖ»úÁ¿¼ì¿ÛË®],[ÊÖ»úÁ¿¼ì¿ÛÔÓ],[ÊÖ»úÖÊ¼ì¿ÛË®],[ÊÖ»úÖÊ¼ì¿ÛÔÓ],[Ã«ÖØ],[Æ¤ÖØ],[¾»ÖØ],[ÃÜ¶È],
+			[ÕÛºÏ·½Êý],[Ã«ÖØ1],[Æ¤ÖØ1],[¾»ÖØ1],[³ÆÖØÊ±°õ·¿ÕÛËãÂÊ],[³ÆÖØÊ±°õ·¿º¬Ë®ÂÊ],[³ÆÖØÊ±°õ·¿¿ÛÔÓ],[³ÆÖØÊ±Îï×Ê²¿º¬Ë®ÂÊ],[³ÆÖØÊ±Îï×Ê²¿¿ÛÔÓ],
+			[µ¥¼Û],[½ð¶î],[ÊµÊÕ½ð¶î],[ÔØÖØ],[Á¿],[Á¿1],[·½],[³§¼ÒÃ«ÖØ],[³§¼ÒÆ¤ÖØ],[³§¼Ò¾»ÖØ],[³§¼Ò·½Êý],[³§¼ÒÁ¿],[³§¼Ò·½],[×Ü¿ÛË®],
+			[×Ü¿ÛÔÓ],[ÔË¾à],[Ç©ÊÕÁ¿],[Ç©ÊÕ·½],[½áËãÁ¿],[½áËã·½],[ÊÖ»úÁ¿¼ì¾­¶È],[ÊÖ»úÁ¿¼ìÎ³¶È],[ÊÖ»úÖÊ¼ì¾­¶È],[ÊÖ»úÖÊ¼ìÎ³¶È],[´´½¨Ê±¼ä],
+			[´´½¨ÈË],[´´½¨¶Ë],[ÐÞ¸ÄÊ±¼ä],[ÐÞ¸ÄÈË],[ÐÞ¸Ä¶Ë])
+		VALUES(@Âô»õµ¥ºÅ,@³µºÅ,@Æ·Ãû,@¹æ¸ñ,@ÔËÊäµ¥Î»,@ÍÐÔËµ¥Î»,@´æÁÏµØ,@ÊÕ»õµØÖ·,@ÊÕÁÏÔ±,@ËÍ»õÈË,@Ë¾°õÔ±,
+			@Ð¶»õ·½Ê½,@½áËã·½Ê½,NULL,@ÖáÊý,@µÀÂ·ÔËÊäÖ¤ºÅ,@´ÓÒµ×Ê¸ñÖ¤ºÅ,@¼ÝÊ»Ö¤ºÅ,@¾»ÖØ´óÐ´,@ÕÛºÏ·½Êý´óÐ´,@ÊµÊÕ½ð¶î´óÐ´,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			@ºÏÍ¬±àºÅ,@ÈÎÎñ±àºÅ,@Ìáµ¥±àºÅ,@ÔËÊä·½Ê½,@¹¤³ÌÃû³Æ,@Ê¹ÓÃ²¿Î»,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,@±¸×¢,
+			NULL,@Âô»õÊ±¼ä,@½ø³§Ê±¼ä,@³ö³§Ê±¼ä,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,@Ã«ÖØ,@Æ¤ÖØ,@¾»ÖØ,NULL,
+			@ÕÛºÏ·½Êý,@Ã«ÖØ,@Æ¤ÖØ,@¾»ÖØ,NULL,NULL,NULL,NULL,NULL,
+			@µ¥¼Û,@½ð¶î,@ÊµÊÕ½ð¶î,@ÔØÖØ,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,@ÔË¾à,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,@µ±Ç°Ê±¼ä,
+			@´´½¨ÈË,@´´½¨¶Ë,NULL,NULL,NULL)
+
+		DECLARE @newID BIGINT
+		DECLARE @oldID BIGINT
+
+		SET @newID = REPLACE(REPLACE(REPLACE(CONVERT(VARCHAR(30), GETDATE(), 120), '-', ''), ' ', ''), ':', '') + RIGHT('0000' + CONVERT(varchar(10), FLOOR(RAND() * 10000)), 4)
+
+		INSERT INTO cv_Âô»õµ¥_ÐèÉóºËÂô»õµ¥ SELECT @newID,* FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ = @Âô»õµ¥ºÅ
+
+		INSERT INTO cv_Í¨ÓÃ_´íÎóÐÞ¸Ä¼ÇÂ¼([ÒªÇóÐÞ¸ÄÈË],[³ö´íÔ­Òò],[ÐÞ¸ÄÈË],[±íÃû],[¼ÇÂ¼±àºÅ],[²Ù×÷ÀàÐÍ],[ÉóºË·½Ê½],[ÉóºË½á¹û],[ÉóºËÈË],[³ö´íÊ±¼ä],[ÐÞ¸ÄÊ±¼ä],[ÉóºËÊ±¼ä],[ÊÇ·ñÒÑÉóºË],[oldID],[newID],[´´½¨Ê±¼ä],[´´½¨ÈË],[´´½¨¶Ë])
+			VALUES(@ÒªÇóÐÞ¸ÄÈË,@³ö´íÔ­Òò,@´´½¨ÈË,'cv_Âô»õµ¥_Âô»õµ¥',@Âô»õµ¥ºÅ,'Ìí¼Ó','¶¼¿ÉÒÔ',NULL,NULL,@Âô»õÊ±¼ä,@µ±Ç°Ê±¼ä,NULL,0,@oldID,@newID,@µ±Ç°Ê±¼ä,@´´½¨ÈË,@´´½¨¶Ë)
+		
+
+
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, @Âô»õµ¥ºÅ)
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
+
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[saveÂô»õµ¥ÊÖ¹¤ÐÞ¸Ä]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[saveÂô»õµ¥ÊÖ¹¤ÐÞ¸Ä]
+GO
+CREATE PROCEDURE [dbo].[saveÂô»õµ¥ÊÖ¹¤ÐÞ¸Ä]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+
+	@Âô»õµ¥ºÅ varchar (50) OUTPUT,
+	@³µºÅ varchar (50) =null,
+	@Æ·Ãû varchar (50) =null,
+	@¹æ¸ñ varchar (50) =null,
+	@ÔËÊäµ¥Î» varchar (50) =null,
+	@ÍÐÔËµ¥Î» varchar (50) =null,
+	@´æÁÏµØ varchar (50) =null,
+	@ÊÕ»õµØÖ· varchar (50) =null,
+	@ÊÕÁÏÔ± varchar (50) =null,
+	@ËÍ»õÈË varchar (50) =null,
+	@Ë¾°õÔ± varchar (50) =null,
+	@Ð¶»õ·½Ê½ varchar (50) =null,
+	@½áËã·½Ê½ varchar (50) =null,
+	@ÖáÊý varchar (50) =null,
+	@µÀÂ·ÔËÊäÖ¤ºÅ varchar (50) =null,
+	@´ÓÒµ×Ê¸ñÖ¤ºÅ varchar (50) =null,
+	@¼ÝÊ»Ö¤ºÅ varchar (50) =null,
+	@¾»ÖØ´óÐ´ varchar (50) =null,
+	@ÕÛºÏ·½Êý´óÐ´ varchar (50) =null,
+	@ÊµÊÕ½ð¶î´óÐ´ varchar (50) =null,
+	@ÈÎÎñ±àºÅ varchar (50) =null,
+	@Ìáµ¥±àºÅ varchar (50) =null,
+	@ÔËÊä·½Ê½ varchar (50) =null,
+	@¹¤³ÌÃû³Æ varchar (50) =null,
+	@Ê¹ÓÃ²¿Î» varchar (50) =null,
+	@±¸×¢ varchar (200) =null,
+	@Âô»õÊ±¼ä Datetime =null,
+	@½ø³§Ê±¼ä Datetime =null,
+	@³ö³§Ê±¼ä Datetime =null,
+	@Ã«ÖØ decimal(18,2) =null,
+	@Æ¤ÖØ decimal(18,2) =null,
+	@¾»ÖØ decimal(18,2) =null,
+	@ÕÛºÏ·½Êý decimal(18,2) =null,
+	@µ¥¼Û decimal(18,2) =null,
+	@½ð¶î decimal(18,2) =null,
+	@ÊµÊÕ½ð¶î decimal(18,2) =null,
+	@ÔØÖØ decimal(18,2) =null,
+	@ÔË¾à decimal(18,2) =null,
+	@´´½¨ÈË varchar (50) =null,
+	@´´½¨¶Ë varchar (50) =null,
+
+	@ÒªÇóÐÞ¸ÄÈË varchar (50) =null,
+	@³ö´íÔ­Òò varchar (50) =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------ÅÐ¶ÏÊ±¼ä´ÁÊÇ·ñÒÑ¾­Ê¹ÓÃ¹ýÁË-------------------------
+	IF exists(SELECT 1 FROM ÏµÍ³_Ê±¼ä´Á WHERE sn=@sn)
+	BEGIN
+		SET @msg='´ËÊ±¼ä´ÁÒÑ¾­Ê¹ÓÃ£¬ÇëÖØÐÂ±£´æ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	--------------------------------¼ÇÂ¼Ê±¼ä´Á-------------------------------
+	INSERT INTO ÏµÍ³_Ê±¼ä´Á (sn,dt,msg,code) VALUES (@sn, getdate(), '¿ªÊ¼Ð´ÈëÊÖ¶¯´òÓ¡Êý¾Ý', 1)
+	
+	IF ISNULL(@ÒªÇóÐÞ¸ÄÈË, '') = ''
+	BEGIN
+		SET @msg='ÒªÇóÐÞ¸ÄÈË   ±ØÐëÊäÈëÄÚÈÝ!'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@³ö´íÔ­Òò, '') = ''
+	BEGIN
+		SET @msg='³ö´íÔ­Òò   ±ØÐëÊäÈëÄÚÈÝ!'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	IF ISNULL(@³µºÅ, '') = ''
+	BEGIN
+		SET @msg='³µºÅ ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@Æ·Ãû, '') = ''
+	BEGIN
+		SET @msg='Æ·Ãû ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@¹æ¸ñ, '') = ''
+	BEGIN
+		SET @msg='¹æ¸ñ ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@ÔËÊäµ¥Î», '') = ''
+	BEGIN
+		SET @msg='ÔËÊäµ¥Î» ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@ÍÐÔËµ¥Î», '') = ''
+	BEGIN
+		SET @msg='ÍÐÔËµ¥Î» ±ØÐëÊäÈëÄÚÈÝ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+
+	IF NOT EXISTS(SELECT * FROM cv_Âô»õµ¥_Æ·Ãû WHERE Æ·Ãû = @Æ·Ãû)
+	BEGIN
+		SET @msg='Æ·Ãû  ÊäÈë´íÎó£¬Ö»ÄÜÊäÈëÖ¸¶¨Öµ¡£'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF NOT EXISTS(SELECT * FROM cv_Âô»õµ¥_Æ·ÃûÓë¹æ¸ñ WHERE Æ·Ãû = @Æ·Ãû AND ¹æ¸ñ = @¹æ¸ñ)
+	BEGIN
+		SET @msg='¹æ¸ñ  ÊäÈë´íÎó£¬Ö»ÄÜÊäÈëÖ¸¶¨Öµ¡£'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	DECLARE @ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨ varchar(50)
+	SELECT @ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨ = Öµ FROM cv_ÏµÍ³_²ÎÊýÉèÖÃ WHERE ÏîÄ¿ = 'ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨'
+	IF @ÊÇ·ñ¼ì²éÂô»õ³µºÅºÏ·¨ = 'ÊÇ'
+	BEGIN
+		IF CHARINDEX(' ', @³µºÅ) > 0
+		BEGIN
+			SET @msg='²»ÄÜÔÚ³µºÅÖÐÊäÈë¿Õ¸ñ¡£'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+		IF LEN(@³µºÅ) < 7 
+		BEGIN
+			SET @msg='Çë½«³µºÅÊäÈëÕýÈ·£¬±ØÐëÊäÈë7Î»(°üÀ¨ºº×Ö)' + CHAR(10) + 'Çë²ÉÓÃÈçÏÂ¸ñÊ½:½úK12345'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+	END
+	
+	DECLARE @¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ varchar(50)
+	SELECT @¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ = Öµ FROM cv_ÏµÍ³_²ÎÊýÉèÖÃ WHERE ÏîÄ¿ = '¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ'
+	IF @¹ý°õÊÇ·ñ±ØÐë¼ì²éÔØÖØ = 'ÊÇ'
+		IF ISNULL(@ÔØÖØ, 0) <= 0
+		BEGIN
+			SET @msg='ÖáÊýÓëÔØÖØÐÅÏ¢ÊäÈë´íÎó'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+
+	DECLARE @ºÏÍ¬±àºÅ VARCHAR(50)
+	IF ISNULL(@½áËã·½Ê½,'') = 'Í³Ò»½áËã'
+	BEGIN
+		IF ISNULL(@ÈÎÎñ±àºÅ, '') = ''
+		BEGIN
+			SET @msg='µ±Ê¹ÓÃ(Í³Ò»½áËãÊ±£¬±ØÑ¡ÊäÈëÈÎÎñ±àºÅ)'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+
+		SELECT @ºÏÍ¬±àºÅ = ºÏÍ¬±àºÅ FROM cv_ÈÎÎñ_ÈÎÎñÄÚÈÝ WHERE ÈÎÎñ±àºÅ = @ÈÎÎñ±àºÅ
+		IF ISNULL(@ºÏÍ¬±àºÅ, '') = ''
+		BEGIN
+			SET @msg='Ã»ÓÐ¸ÃÈÎÎñ±àºÅ£¬²»ÄÜ±£´æÊý¾Ý'
+			UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+		
+		IF ISNULL(@Ìáµ¥±àºÅ, '') != ''
+		BEGIN
+			DECLARE @Ìáµ¥ºÏÍ¬±àºÅ VARCHAR(50)
+			SELECT @Ìáµ¥ºÏÍ¬±àºÅ = ºÏÍ¬±àºÅ FROM cv_Âô»õµ¥_Ìáµ¥ WHERE Ìáµ¥±àºÅ = @Ìáµ¥±àºÅ
+			IF ISNULL(@Ìáµ¥ºÏÍ¬±àºÅ, '') != @ºÏÍ¬±àºÅ
+			BEGIN
+				SET @msg='ÄúËùÊäÈëµÄÌáµ¥±àºÅ²»ÊôÓÚÕâ¸öÈÎÎñ±àºÅ£¬ÊäÈë´íÎó'
+				UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+				RAISERROR (@msg,16,1)
+				RETURN
+			END
+		END
+	END
+
+	DECLARE @µ±Ç°Ê±¼ä VARCHAR(30)
+	SET @µ±Ç°Ê±¼ä = CONVERT(VARCHAR(30), GETDATE(), 120)
+
+	--ÅÐ¶Ï´ËÂô»õµ¥ÊÇ·ñ´æÔÚÎ´ÉóºË¼ÇÂ¼
+	IF EXISTS(SELECT * FROM cv_Í¨ÓÃ_´íÎóÐÞ¸Ä¼ÇÂ¼ WHERE ¼ÇÂ¼±àºÅ = @Âô»õµ¥ºÅ AND ±íÃû = 'cv_Âô»õµ¥_Âô»õµ¥' AND ISNULL(ÊÇ·ñÒÑÉóºË, 0) = 0)
+	BEGIN
+		SET @msg='´ËÂô»õµ¥´æÔÚÎ´ÉóºË¼ÇÂ¼£¬²»ÄÜÐÞ¸Ä'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	DECLARE @Ô­Æ±¾ÝÂô»õÊ±¼ä DATETIME
+	SELECT @Ô­Æ±¾ÝÂô»õÊ±¼ä = Âô»õÊ±¼ä FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ = @Âô»õµ¥ºÅ
+
+	SET @¾»ÖØ´óÐ´ = dbo.f_num_chnÊýÁ¿(@¾»ÖØ)
+	SET @ÕÛºÏ·½Êý´óÐ´ = dbo.f_num_chnÊýÁ¿(@ÕÛºÏ·½Êý)
+	SET @ÊµÊÕ½ð¶î´óÐ´ = dbo.f_num_chn½ð¶î(@ÊµÊÕ½ð¶î)
+
+	BEGIN TRAN
+	BEGIN TRY
+		DECLARE @oldID BIGINT
+		DECLARE @newID BIGINT
+		
+		SET @oldID = REPLACE(REPLACE(REPLACE(CONVERT(VARCHAR(30), GETDATE(), 120), '-', ''), ' ', ''), ':', '') + RIGHT('0000' + CONVERT(varchar(10), FLOOR(RAND() * 10000)), 4)
+		INSERT INTO cv_Âô»õµ¥_ÐèÉóºËÂô»õµ¥ SELECT @oldID,* FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ = @Âô»õµ¥ºÅ
+
+		UPDATE cv_Âô»õµ¥_Âô»õµ¥ SET
+			[³µºÅ]=@³µºÅ,
+			[Æ·Ãû]=@Æ·Ãû,
+			[¹æ¸ñ]=@¹æ¸ñ,
+			[ÔËÊäµ¥Î»]=@ÔËÊäµ¥Î»,
+			[ÍÐÔËµ¥Î»]=@ÍÐÔËµ¥Î»,
+			[´æÁÏµØ] =@´æÁÏµØ,
+			[ÊÕ»õµØÖ·]=@ÊÕ»õµØÖ·,
+			[ÊÕÁÏÔ±]=@ÊÕÁÏÔ±,
+			[ËÍ»õÈË]=@ËÍ»õÈË,
+			[Ë¾°õÔ±]=@Ë¾°õÔ±,
+			[Ð¶»õ·½Ê½]=@Ð¶»õ·½Ê½,
+			[½áËã·½Ê½]=@½áËã·½Ê½,
+			[ÖáÊý]=@ÖáÊý,
+			[µÀÂ·ÔËÊäÖ¤ºÅ]=@µÀÂ·ÔËÊäÖ¤ºÅ,
+			[´ÓÒµ×Ê¸ñÖ¤ºÅ]=@´ÓÒµ×Ê¸ñÖ¤ºÅ,
+			[¼ÝÊ»Ö¤ºÅ]=@¼ÝÊ»Ö¤ºÅ,
+			[¾»ÖØ´óÐ´]=@¾»ÖØ´óÐ´,
+			[ÕÛºÏ·½Êý´óÐ´]=@ÕÛºÏ·½Êý´óÐ´,
+			[ÊµÊÕ½ð¶î´óÐ´]=@ÊµÊÕ½ð¶î´óÐ´,
+			ºÏÍ¬±àºÅ = @ºÏÍ¬±àºÅ,
+			ÈÎÎñ±àºÅ = @ÈÎÎñ±àºÅ,
+			Ìáµ¥±àºÅ = @Ìáµ¥±àºÅ,
+			ÔËÊä·½Ê½ = @ÔËÊä·½Ê½,
+			¹¤³ÌÃû³Æ = @¹¤³ÌÃû³Æ,
+			Ê¹ÓÃ²¿Î» = @Ê¹ÓÃ²¿Î»,
+			[±¸×¢]=@±¸×¢,
+			[Âô»õÊ±¼ä]=@Âô»õÊ±¼ä,
+			[½ø³§Ê±¼ä]=@½ø³§Ê±¼ä,
+			[³ö³§Ê±¼ä]=@³ö³§Ê±¼ä,
+			[Ã«ÖØ]=@Ã«ÖØ,
+			[Æ¤ÖØ]=@Æ¤ÖØ,
+			[¾»ÖØ]=@¾»ÖØ,
+			[ÕÛºÏ·½Êý]=@ÕÛºÏ·½Êý,
+			[µ¥¼Û]=@µ¥¼Û,
+			[½ð¶î]=@½ð¶î,
+			[ÊµÊÕ½ð¶î]=@ÊµÊÕ½ð¶î,
+			[ÔØÖØ]=@ÔØÖØ,
+			[ÔË¾à] = @ÔË¾à,
+			[ÐÞ¸ÄÊ±¼ä]=@µ±Ç°Ê±¼ä,
+			[ÐÞ¸ÄÈË]=@´´½¨ÈË,
+			[ÐÞ¸Ä¶Ë]=@´´½¨¶Ë
+		WHERE Âô»õµ¥ºÅ=@Âô»õµ¥ºÅ
+		
+		SET @newID = REPLACE(REPLACE(REPLACE(CONVERT(VARCHAR(30), GETDATE(), 120), '-', ''), ' ', ''), ':', '') + RIGHT('0000' + CONVERT(varchar(10), FLOOR(RAND() * 10000)), 4)
+		INSERT INTO cv_Âô»õµ¥_ÐèÉóºËÂô»õµ¥ SELECT @newID,* FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ = @Âô»õµ¥ºÅ
+		
+		
+		
+		INSERT INTO cv_Í¨ÓÃ_´íÎóÐÞ¸Ä¼ÇÂ¼([ÒªÇóÐÞ¸ÄÈË],[³ö´íÔ­Òò],[ÐÞ¸ÄÈË],[±íÃû],[¼ÇÂ¼±àºÅ],[²Ù×÷ÀàÐÍ],[ÉóºË·½Ê½],[ÉóºË½á¹û],[ÉóºËÈË],[³ö´íÊ±¼ä],[ÐÞ¸ÄÊ±¼ä],[ÉóºËÊ±¼ä],[ÊÇ·ñÒÑÉóºË],[oldID],[newID],[´´½¨Ê±¼ä],[´´½¨ÈË],[´´½¨¶Ë])
+			VALUES(@ÒªÇóÐÞ¸ÄÈË,@³ö´íÔ­Òò,@´´½¨ÈË,'cv_Âô»õµ¥_Âô»õµ¥',@Âô»õµ¥ºÅ,'ÐÞ¸Ä','¶¼¿ÉÒÔ',NULL,NULL,@Ô­Æ±¾ÝÂô»õÊ±¼ä,@µ±Ç°Ê±¼ä,NULL,0,@oldID,@newID,@µ±Ç°Ê±¼ä,@´´½¨ÈË,@´´½¨¶Ë)
+		
+		
+
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, @Âô»õµ¥ºÅ)
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
+
+
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[saveÂô»õµ¥ÊÖ¹¤É¾³ý]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[saveÂô»õµ¥ÊÖ¹¤É¾³ý]
+GO
+CREATE PROCEDURE [dbo].[saveÂô»õµ¥ÊÖ¹¤É¾³ý]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+
+	@Âô»õµ¥ºÅ varchar (50) =null,
+	@ÐÞ¸ÄÈË varchar (50) =null,
+	@ÐÞ¸Ä¶Ë varchar (50) =null,
+
+	@ÒªÇóÐÞ¸ÄÈË varchar (50) =null,
+	@³ö´íÔ­Òò varchar (50) =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------ÅÐ¶ÏÊ±¼ä´ÁÊÇ·ñÒÑ¾­Ê¹ÓÃ¹ýÁË-------------------------
+	IF exists(SELECT 1 FROM ÏµÍ³_Ê±¼ä´Á WHERE sn=@sn)
+	BEGIN
+		SET @msg='´ËÊ±¼ä´ÁÒÑ¾­Ê¹ÓÃ£¬ÇëÖØÐÂ±£´æ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	--------------------------------¼ÇÂ¼Ê±¼ä´Á-------------------------------
+	INSERT INTO ÏµÍ³_Ê±¼ä´Á (sn,dt,msg,code) VALUES (@sn, getdate(), '¿ªÊ¼Ð´ÈëÊÖ¶¯´òÓ¡Êý¾Ý', 1)
+
+	IF ISNULL(@ÒªÇóÐÞ¸ÄÈË, '') = ''
+	BEGIN
+		SET @msg='ÒªÇóÐÞ¸ÄÈË   ±ØÐëÊäÈëÄÚÈÝ!'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@³ö´íÔ­Òò, '') = ''
+	BEGIN
+		SET @msg='³ö´íÔ­Òò   ±ØÐëÊäÈëÄÚÈÝ!'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	DECLARE @µ±Ç°Ê±¼ä VARCHAR(30)
+	SET @µ±Ç°Ê±¼ä = CONVERT(VARCHAR(30), GETDATE(), 120)
+
+	--ÅÐ¶Ï´ËÂô»õµ¥ÊÇ·ñ´æÔÚÎ´ÉóºË¼ÇÂ¼
+	IF EXISTS(SELECT * FROM cv_Í¨ÓÃ_´íÎóÐÞ¸Ä¼ÇÂ¼ WHERE ¼ÇÂ¼±àºÅ = @Âô»õµ¥ºÅ AND ±íÃû = 'cv_Âô»õµ¥_Âô»õµ¥' AND ISNULL(ÊÇ·ñÒÑÉóºË, 0) = 0)
+	BEGIN
+		SET @msg='´ËÂô»õµ¥´æÔÚÎ´ÉóºË¼ÇÂ¼£¬²»ÄÜÐÞ¸Ä'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	DECLARE @Ô­Æ±¾ÝÂô»õÊ±¼ä DATETIME
+	SELECT @Ô­Æ±¾ÝÂô»õÊ±¼ä = Âô»õÊ±¼ä FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ = @Âô»õµ¥ºÅ
+
+	BEGIN TRAN
+	BEGIN TRY
+		DECLARE @oldID BIGINT
+		DECLARE @newID BIGINT
+		
+		SET @oldID = REPLACE(REPLACE(REPLACE(CONVERT(VARCHAR(30), GETDATE(), 120), '-', ''), ' ', ''), ':', '') + RIGHT('0000' + CONVERT(varchar(10), FLOOR(RAND() * 10000)), 4)
+		INSERT INTO cv_Âô»õµ¥_ÐèÉóºËÂô»õµ¥ SELECT @oldID,* FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ = @Âô»õµ¥ºÅ
+		
+		DELETE FROM cv_Âô»õµ¥_Âô»õµ¥ WHERE Âô»õµ¥ºÅ=@Âô»õµ¥ºÅ
+
+		INSERT INTO cv_Í¨ÓÃ_´íÎóÐÞ¸Ä¼ÇÂ¼([ÒªÇóÐÞ¸ÄÈË],[³ö´íÔ­Òò],[ÐÞ¸ÄÈË],[±íÃû],[¼ÇÂ¼±àºÅ],[²Ù×÷ÀàÐÍ],[ÉóºË·½Ê½],[ÉóºË½á¹û],[ÉóºËÈË],[³ö´íÊ±¼ä],[ÐÞ¸ÄÊ±¼ä],[ÉóºËÊ±¼ä],[ÊÇ·ñÒÑÉóºË],[oldID],[newID],[´´½¨Ê±¼ä],[´´½¨ÈË],[´´½¨¶Ë])
+			VALUES(@ÒªÇóÐÞ¸ÄÈË,@³ö´íÔ­Òò,@ÐÞ¸ÄÈË,'cv_Âô»õµ¥_Âô»õµ¥',@Âô»õµ¥ºÅ,'É¾³ý','¶¼¿ÉÒÔ',NULL,NULL,@Ô­Æ±¾ÝÂô»õÊ±¼ä,@µ±Ç°Ê±¼ä,NULL,0,@oldID,@newID,@µ±Ç°Ê±¼ä,@ÐÞ¸ÄÈË,@ÐÞ¸Ä¶Ë)
+		
+
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, @Âô»õµ¥ºÅ)
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
+
+delete from ½çÃæ_²éÑ¯Ï°¹ß
+
+update ÏµÍ³_Í¨ÓÃ²éÑ¯Ä£¿é set
+	iSumSql = 'count(*) as ³µÊý,'''' from cv_Âô»õµ¥_Âô»õµ¥',
+	iSubSql = 'count(*) as ³µÊý,sum(Ã«ÖØ) as Ã«ÖØ,sum(Æ¤ÖØ) as Æ¤ÖØ,sum(¾»ÖØ) as ¾»ÖØ,SUM(ÕÛºÏ·½Êý) as ÕÛºÏ·½Êý,sum(Ç©ÊÕÁ¿) as Ç©ÊÕÁ¿, sum(Ç©ÊÕ·½) Ç©ÊÕ·½,sum(case when isnull(Ç©ÊÕÁ¿,0)>0 then 1 else case when isnull(Ç©ÊÕ·½,0)>0 then 1 else 0 end end) Ç©ÊÕ³µÊý,sum(½áËãÁ¿) ½áËãÁ¿,sum(½áËã·½) AS ½áËã·½,sum(case when isnull(½áËãÁ¿,0)>0 then 1 else case when isnull(½áËã·½,0)>0 then 1 else 0 end end) ½áËã³µÊý,sum(½ð¶î) as Ó¦ÊÕ½ð¶î,sum(ÊµÊÕ½ð¶î) as ÊµÊÕ½ð¶î from cv_Âô»õµ¥_Âô»õµ¥'
+where mdl='Âô»õ²éÑ¯'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[InsertÏûÏ¢_Í¨Öª]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[InsertÏûÏ¢_Í¨Öª]
+GO
+CREATE PROCEDURE [dbo].[InsertÏûÏ¢_Í¨Öª]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+	
+	@ÏûÏ¢ºÅ int =null,
+	@ÏûÏ¢À´Ô´ varchar (50) =null,
+	@ÏûÏ¢À´Ô´ÓÃ»§ varchar (50) =null,
+	@Ô­¼þ²ÎÊý varchar (200) =null,
+	@Ö´ÐÐ²ÎÊý varchar (200) =null,
+	@ÊÇ·ñÊÕµ½ bit =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------ÅÐ¶ÏÊ±¼ä´ÁÊÇ·ñÒÑ¾­Ê¹ÓÃ¹ýÁË-------------------------
+	IF exists(SELECT 1 FROM ÏµÍ³_Ê±¼ä´Á WHERE sn=@sn)
+	BEGIN
+		SET @msg='´ËÊ±¼ä´ÁÒÑ¾­Ê¹ÓÃ£¬ÇëÖØÐÂ±£´æ£¡'
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	--------------------------------¼ÇÂ¼Ê±¼ä´Á-------------------------------
+	INSERT INTO ÏµÍ³_Ê±¼ä´Á (sn,dt,msg,code) VALUES (@sn, getdate(), '¿ªÊ¼Ð´ÈëÊÖ¶¯´òÓ¡Êý¾Ý', 1)	
+
+	BEGIN TRAN
+	BEGIN TRY
+		DELETE FROM ÏûÏ¢_Í¨Öª WHERE ÏûÏ¢ºÅ =@ÏûÏ¢ºÅ AND Ô­¼þ²ÎÊý = @Ô­¼þ²ÎÊý AND Ö´ÐÐ²ÎÊý = @Ö´ÐÐ²ÎÊý
+
+		INSERT INTO ÏûÏ¢_Í¨Öª([ÏûÏ¢ºÅ],[ÏûÏ¢À´Ô´],[ÏûÏ¢À´Ô´ÓÃ»§],[Ô­¼þ²ÎÊý],[Ö´ÐÐ²ÎÊý],[ÊÇ·ñÊÕµ½],[Ê±¼ä])
+		Values (@ÏûÏ¢ºÅ,@ÏûÏ¢À´Ô´,@ÏûÏ¢À´Ô´ÓÃ»§,@Ô­¼þ²ÎÊý,@Ö´ÐÐ²ÎÊý,@ÊÇ·ñÊÕµ½,getdate())
+
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, '')
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  ÏµÍ³_Ê±¼ä´Á SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
 
