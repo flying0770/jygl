@@ -4464,3 +4464,26 @@ BEGIN
 	ELSE
 		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9退货时是否起道闸'
 END
+
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '一卡通卡类别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('一卡通卡类别', 'IC', 'IC,ID', 'str')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = 'IC,ID', 参数类型 = 'str' WHERE 项目 = '一卡通卡类别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '修改卖货车号密码')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('修改卖货车号密码', 'OK', 'OK,', 'str')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = 'OK,', 参数类型 = 'str' WHERE 项目 = '修改卖货车号密码'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '进货票据编号方式')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('进货票据编号方式', '流水', '流水,时间', 'str')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '流水,时间', 参数类型 = 'str' WHERE 项目 = '进货票据编号方式'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '卖货票据编号方式')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('卖货票据编号方式', '流水', '流水,时间', 'str')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '流水,时间', 参数类型 = 'str' WHERE 项目 = '卖货票据编号方式'
+
+

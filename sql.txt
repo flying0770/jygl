@@ -63282,7 +63282,7 @@ DECLARE @sReturnCode varchar(20)
 		DECLARE @公司代码 varchar(2)
 		SELECT @公司代码=公司代码 FROM 系统_公司代码
 		DECLARE @票据编号方式 varchar(6)
-		SELECT @票据编号方式=值 from cv_系统_参数设置 where 项目='进货票据编号方式'
+		SELECT @票据编号方式=值 from cv_系统_参数设置 where 项目='卖货票据编号方式'
 		IF @票据编号方式='时间'
 		BEGIN
 			SET @sReturnCode = @公司代码 + CONVERT(VARCHAR,@sDate,12) + REPLACE(CONVERT(VARCHAR,@sDate,8),':','')
@@ -64064,55 +64064,6 @@ update 系统_通用查询模块 set
 where mdl='卖货查询'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[Insert消息_通知]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
 DROP PROCEDURE [dbo].[Insert消息_通知]
 GO
@@ -64170,3 +64121,685 @@ CREATE PROCEDURE [dbo].[Insert消息_通知]
 	END
 GO
 
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[getCodeFor卖货单新]') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION [dbo].[getCodeFor卖货单新]
+GO
+
+
+CREATE FUNCTION [dbo].[getCodeFor卖货单新](
+	@sDate datetime
+)
+RETURNS VARCHAR(20)
+AS 
+BEGIN
+
+DECLARE @sReturnCode varchar(20)
+	
+	IF @sDate IS NULL 
+		SET @sReturnCode=''
+	ELSE
+	BEGIN
+		DECLARE @公司代码 varchar(2)
+		SELECT @公司代码=公司代码 FROM 系统_公司代码
+		DECLARE @票据编号方式 varchar(6)
+		SELECT @票据编号方式=值 from cv_系统_参数设置 where 项目='卖货票据编号方式'
+		IF @票据编号方式='时间'
+		BEGIN
+			SET @sReturnCode = @公司代码 + CONVERT(VARCHAR,@sDate,12) + REPLACE(CONVERT(VARCHAR,@sDate,8),':','')
+
+			WHILE EXISTS(SELECT * FROM cv_卖货单_新卖货单 WHERE 卖货单号 = @sReturnCode)
+			BEGIN
+				SET @sDate=DATEADD(s,1,@sDate)
+				SET @sReturnCode = @公司代码 + CONVERT(VARCHAR,@sDate,12) + REPLACE(CONVERT(VARCHAR,@sDate,8),':','')
+			END
+		END
+		ELSE
+		BEGIN
+			--获取前缀-----------------
+			DECLARE @前缀 varchar(20)
+			SET @前缀 = @公司代码 + CONVERT(VARCHAR,@sDate,12)
+			SET @sReturnCode=@前缀
+			--取最大卖货单号------------
+			DECLARE @Max卖货单号 VARCHAR(20)
+			--select @Max卖货单号=max(最大编号) from 过磅_卖货单最大编号 where 前缀=@前缀
+			SELECT @Max卖货单号 = MAX(卖货单号)
+			FROM (
+			        SELECT MAX(卖货单号) 卖货单号
+			        FROM cv_卖货单_新卖货单
+			        WHERE LEFT(卖货单号, 8) = @前缀) a
+
+			---计算当天最大序号-----------
+			DECLARE @maxNumer int
+			if  @Max卖货单号 is  null
+				select @maxNumer=1
+			else
+			begin
+				if (substring(@Max卖货单号,1,8)=@前缀)
+					select @maxNumer=Convert(int,substring(@Max卖货单号,9,5))+1
+				else
+					select @maxNumer=1
+			end
+			select  @Max卖货单号=@前缀+right('00000'+Convert(varchar,@maxNumer),5)
+			set @sReturnCode=@Max卖货单号
+		END
+	END
+
+	RETURN @sReturnCode
+END
+GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[save卖货单新手工添加]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[save卖货单新手工添加]
+GO
+CREATE PROCEDURE [dbo].[save卖货单新手工添加]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+
+	@卖货单号 varchar (50) OUTPUT,
+	@车号 varchar (50) =null,
+	@品名 varchar (50) =null,
+	@规格 varchar (50) =null,
+	@运输单位 varchar (50) =null,
+	@托运单位 varchar (50) =null,
+	@存料地 varchar (50) =null,
+	@收货地址 varchar (50) =null,
+	@收料员 varchar (50) =null,
+	@送货人 varchar (50) =null,
+	@司磅员 varchar (50) =null,
+	@卸货方式 varchar (50) =null,
+	@结算方式 varchar (50) =null,
+	@轴数 varchar (50) =null,
+	@道路运输证号 varchar (50) =null,
+	@从业资格证号 varchar (50) =null,
+	@驾驶证号 varchar (50) =null,
+	@净重大写 varchar (50) =null,
+	@折合方数大写 varchar (50) =null,
+	@实收金额大写 varchar (50) =null,
+	@任务编号 varchar (50) =null,
+	@提单编号 varchar (50) =null,
+	@运输方式 varchar (50) =null,
+	@工程名称 varchar (50) =null,
+	@使用部位 varchar (50) =null,
+	@备注 varchar (200) =null,
+	@卖货时间 Datetime =null,
+	@进厂时间 Datetime =null,
+	@出厂时间 Datetime =null,
+	@毛重 decimal(18,2) =null,
+	@皮重 decimal(18,2) =null,
+	@净重 decimal(18,2) =null,
+	@折合方数 decimal(18,2) =null,
+	@单价 decimal(18,2) =null,
+	@金额 decimal(18,2) =null,
+	@实收金额 decimal(18,2) =null,
+	@载重 decimal(18,2) =null,
+	@运距 decimal(18,2) =null,
+	@创建人 varchar (50) =null,
+	@创建端 varchar (50) =null,
+
+	@要求修改人 varchar (50) =null,
+	@出错原因 varchar (50) =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------判断时间戳是否已经使用过了-------------------------
+	IF exists(SELECT 1 FROM 系统_时间戳 WHERE sn=@sn)
+	BEGIN
+		SET @msg='此时间戳已经使用，请重新保存！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	--------------------------------记录时间戳-------------------------------
+	INSERT INTO 系统_时间戳 (sn,dt,msg,code) VALUES (@sn, getdate(), '开始写入手动打印数据', 1)
+	
+	IF ISNULL(@车号, '') = ''
+	BEGIN
+		SET @msg='车号 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@品名, '') = ''
+	BEGIN
+		SET @msg='品名 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@规格, '') = ''
+	BEGIN
+		SET @msg='规格 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@运输单位, '') = ''
+	BEGIN
+		SET @msg='运输单位 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	
+
+
+	IF ISNULL(@托运单位, '') = ''
+	BEGIN
+		SET @msg='托运单位 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF NOT EXISTS(SELECT * FROM cv_卖货单_品名 WHERE 品名 = @品名)
+	BEGIN
+		SET @msg='品名  输入错误，只能输入指定值。'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF NOT EXISTS(SELECT * FROM cv_卖货单_品名与规格 WHERE 品名 = @品名 AND 规格 = @规格)
+	BEGIN
+		SET @msg='规格  输入错误，只能输入指定值。'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	DECLARE @是否检查卖货车号合法 varchar(50)
+	SELECT @是否检查卖货车号合法 = 值 FROM cv_系统_参数设置 WHERE 项目 = '是否检查卖货车号合法'
+	IF @是否检查卖货车号合法 = '是'
+	BEGIN
+		IF CHARINDEX(' ', @车号) > 0
+		BEGIN
+			SET @msg='不能在车号中输入空格。'
+			UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+		IF LEN(@车号) < 7 
+		BEGIN
+			SET @msg='请将车号输入正确，必须输入7位(包括汉字)' + CHAR(10) + '请采用如下格式:晋K12345'
+			UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+	END
+	
+	DECLARE @过磅是否必须检查载重 varchar(50)
+	SELECT @过磅是否必须检查载重 = 值 FROM cv_系统_参数设置 WHERE 项目 = '过磅是否必须检查载重'
+	IF @过磅是否必须检查载重 = '是'
+		IF ISNULL(@载重, 0) <= 0
+		BEGIN
+			SET @msg='轴数与载重信息输入错误'
+			UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+
+	DECLARE @当前时间 VARCHAR(30)
+	SET @当前时间 = CONVERT(VARCHAR(30), GETDATE(), 120)
+
+	
+	--取卖货单编号
+	SET @卖货单号=dbo.getCodeFor卖货单新(@卖货时间)
+
+	IF LEN(ISNULL(@卖货单号, '')) < 5 
+	BEGIN
+		SET @msg='获取卖货单编号错误，不能保存数据'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+		IF ISNULL(@要求修改人, '') = ''
+	BEGIN
+		SET @msg='要求修改人   必须输入内容!'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@出错原因, '') = ''
+	BEGIN
+		SET @msg='出错原因   必须输入内容!'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	--根据任务编号获取合同编号
+	DECLARE @合同编号 VARCHAR(50)
+
+	SET @净重大写 = dbo.f_num_chn数量(@净重)
+	SET @折合方数大写 = dbo.f_num_chn数量(@折合方数)
+	SET @实收金额大写 = dbo.f_num_chn金额(@实收金额)
+
+	BEGIN TRAN
+	BEGIN TRY
+		INSERT INTO cv_卖货单_新卖货单([卖货单号],[车号],[品名],[规格],[运输单位],[托运单位],[存料地],[收货地址],[收料员],[送货人],[司磅员],
+			[卸货方式],[结算方式],[结算编号],[轴数],[道路运输证号],[从业资格证号],[驾驶证号],[净重大写],[折合方数大写],[实收金额大写],
+			[保存皮重时车号],[保存皮重时品名],[保存皮重时规格],[保存皮重时运输单位],[保存皮重时托运单位],[保存皮重时卸料地],[保存皮重时装货地址],
+			[保存皮重时收料员],[保存皮重时送货人],[保存皮重时司磅员],[保存皮重时卸货方式],[保存皮重时数据来源],[保存皮重时过磅方式],
+			[进厂车牌识别0],[进厂车牌识别1],[进厂车牌识别2],[进厂车牌识别3],[出厂车牌识别0],[出厂车牌识别1],[出厂车牌识别2],[出厂车牌识别3],
+			[发卡卡号],[发卡卡片类型],[发卡本次进厂工作],[发卡卡片状态],[手机量检人],[手机量检结果],[手机量检卸货方式],[手机量检扣水方式],
+			[手机量检扣杂方式],[手机量检地点],[手机量检输入端],[手机质检人],[手机质检结果],[手机质检扣水方式],[手机质检扣杂方式],
+			[手机质检地点],[手机质检输入端],[手机质检项1],[手机质检值1],[手机质检项2],[手机质检值2],[手机质检项3],[手机质检值3],
+			[手机质检项4],[手机质检值4],[手机质检项5],[手机质检值5],[手机质检项6],[手机质检值6],[手机质检项7],[手机质检值7],[手机质检项8],
+			[手机质检值8],[手机质检项9],[手机质检值9],[手机质检项10],[手机质检值10],[手机品名],[手机规格],[手机存料地],[称重时数据来源],
+			[合同编号],[任务编号],[提单编号],[运输方式],[工程名称],[使用部位],[照片0],[照片1],[照片2],[照片3],[照片4],[照片5],[照片6],
+			[照片7],[照片8],[照片9],[照片10],[照片11],[手机量检照片0],[手机量检照片1],[手机量检照片2],[手机量检照片3],[手机量检照片4],
+			[手机量检照片5],[手机质检照片0],[手机质检照片1],[手机质检照片2],[手机质检照片3],[手机质检照片4],[手机质检照片5],[备注],
+			[保存皮重时进厂时间],[卖货时间],[进厂时间],[出厂时间],[手机量检时间],[手机质检时间],[发卡时间],[进门刷卡时间],[首次过磅时间],
+			[二次过磅时间],[出门刷卡时间],[签收日期],[保存皮重时打印票据标志],[重量小数位数],[折方小数位数],[手机量检标志],[手机质检标志],
+			[修改标志],[打印次数],[核对标志],[整理标志],[账务标志],[保存皮重时是否直接扣重],[拉运时长],[卸料时长],[多提单标志],
+			[保存皮重时磅房折算率],[保存皮重时磅房含水率],[保存皮重时磅房扣杂],[保存皮重时物资部折算率],[保存皮重时物资部含水率],
+			[保存皮重时物资部扣杂],[保存皮重时厂家毛重],[保存皮重时厂家皮重],[保存皮重时厂家净重],[保存皮重时厂家方数],[保存皮重时皮重],
+			[保存皮重时量],[保存皮重时单价],[手机量检扣水],[手机量检扣杂],[手机质检扣水],[手机质检扣杂],[毛重],[皮重],[净重],[密度],
+			[折合方数],[毛重1],[皮重1],[净重1],[称重时磅房折算率],[称重时磅房含水率],[称重时磅房扣杂],[称重时物资部含水率],[称重时物资部扣杂],
+			[单价],[金额],[实收金额],[载重],[量],[量1],[方],[厂家毛重],[厂家皮重],[厂家净重],[厂家方数],[厂家量],[厂家方],[总扣水],
+			[总扣杂],[运距],[签收量],[签收方],[结算量],[结算方],[手机量检经度],[手机量检纬度],[手机质检经度],[手机质检纬度],[创建时间],
+			[创建人],[创建端],[修改时间],[修改人],[修改端])
+		VALUES(@卖货单号,@车号,@品名,@规格,@运输单位,@托运单位,@存料地,@收货地址,@收料员,@送货人,@司磅员,
+			@卸货方式,@结算方式,NULL,@轴数,@道路运输证号,@从业资格证号,@驾驶证号,@净重大写,@折合方数大写,@实收金额大写,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			@合同编号,@任务编号,@提单编号,@运输方式,@工程名称,@使用部位,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,@备注,
+			NULL,@卖货时间,@进厂时间,@出厂时间,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,NULL,NULL,NULL,NULL,NULL,@毛重,@皮重,@净重,NULL,
+			@折合方数,@毛重,@皮重,@净重,NULL,NULL,NULL,NULL,NULL,
+			@单价,@金额,@实收金额,@载重,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,
+			NULL,@运距,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,@当前时间,
+			@创建人,@创建端,NULL,NULL,NULL)
+
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, @卖货单号)
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  系统_时间戳 SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
+
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[save卖货单新手工修改]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[save卖货单新手工修改]
+GO
+CREATE PROCEDURE [dbo].[save卖货单新手工修改]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+
+	@卖货单号 varchar (50) OUTPUT,
+	@车号 varchar (50) =null,
+	@品名 varchar (50) =null,
+	@规格 varchar (50) =null,
+	@运输单位 varchar (50) =null,
+	@托运单位 varchar (50) =null,
+	@存料地 varchar (50) =null,
+	@收货地址 varchar (50) =null,
+	@收料员 varchar (50) =null,
+	@送货人 varchar (50) =null,
+	@司磅员 varchar (50) =null,
+	@卸货方式 varchar (50) =null,
+	@结算方式 varchar (50) =null,
+	@轴数 varchar (50) =null,
+	@道路运输证号 varchar (50) =null,
+	@从业资格证号 varchar (50) =null,
+	@驾驶证号 varchar (50) =null,
+	@净重大写 varchar (50) =null,
+	@折合方数大写 varchar (50) =null,
+	@实收金额大写 varchar (50) =null,
+	@任务编号 varchar (50) =null,
+	@提单编号 varchar (50) =null,
+	@运输方式 varchar (50) =null,
+	@工程名称 varchar (50) =null,
+	@使用部位 varchar (50) =null,
+	@备注 varchar (200) =null,
+	@卖货时间 Datetime =null,
+	@进厂时间 Datetime =null,
+	@出厂时间 Datetime =null,
+	@毛重 decimal(18,2) =null,
+	@皮重 decimal(18,2) =null,
+	@净重 decimal(18,2) =null,
+	@折合方数 decimal(18,2) =null,
+	@单价 decimal(18,2) =null,
+	@金额 decimal(18,2) =null,
+	@实收金额 decimal(18,2) =null,
+	@载重 decimal(18,2) =null,
+	@运距 decimal(18,2) =null,
+	@创建人 varchar (50) =null,
+	@创建端 varchar (50) =null,
+
+	@要求修改人 varchar (50) =null,
+	@出错原因 varchar (50) =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------判断时间戳是否已经使用过了-------------------------
+	IF exists(SELECT 1 FROM 系统_时间戳 WHERE sn=@sn)
+	BEGIN
+		SET @msg='此时间戳已经使用，请重新保存！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	--------------------------------记录时间戳-------------------------------
+	INSERT INTO 系统_时间戳 (sn,dt,msg,code) VALUES (@sn, getdate(), '开始写入手动打印数据', 1)
+	
+	IF ISNULL(@要求修改人, '') = ''
+	BEGIN
+		SET @msg='要求修改人   必须输入内容!'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@出错原因, '') = ''
+	BEGIN
+		SET @msg='出错原因   必须输入内容!'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	IF ISNULL(@车号, '') = ''
+	BEGIN
+		SET @msg='车号 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@品名, '') = ''
+	BEGIN
+		SET @msg='品名 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@规格, '') = ''
+	BEGIN
+		SET @msg='规格 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@运输单位, '') = ''
+	BEGIN
+		SET @msg='运输单位 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@托运单位, '') = ''
+	BEGIN
+		SET @msg='托运单位 必须输入内容！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+
+	IF NOT EXISTS(SELECT * FROM cv_卖货单_品名 WHERE 品名 = @品名)
+	BEGIN
+		SET @msg='品名  输入错误，只能输入指定值。'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF NOT EXISTS(SELECT * FROM cv_卖货单_品名与规格 WHERE 品名 = @品名 AND 规格 = @规格)
+	BEGIN
+		SET @msg='规格  输入错误，只能输入指定值。'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	DECLARE @是否检查卖货车号合法 varchar(50)
+	SELECT @是否检查卖货车号合法 = 值 FROM cv_系统_参数设置 WHERE 项目 = '是否检查卖货车号合法'
+	IF @是否检查卖货车号合法 = '是'
+	BEGIN
+		IF CHARINDEX(' ', @车号) > 0
+		BEGIN
+			SET @msg='不能在车号中输入空格。'
+			UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+		IF LEN(@车号) < 7 
+		BEGIN
+			SET @msg='请将车号输入正确，必须输入7位(包括汉字)' + CHAR(10) + '请采用如下格式:晋K12345'
+			UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+	END
+	
+	DECLARE @过磅是否必须检查载重 varchar(50)
+	SELECT @过磅是否必须检查载重 = 值 FROM cv_系统_参数设置 WHERE 项目 = '过磅是否必须检查载重'
+	IF @过磅是否必须检查载重 = '是'
+		IF ISNULL(@载重, 0) <= 0
+		BEGIN
+			SET @msg='轴数与载重信息输入错误'
+			UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+			RAISERROR (@msg,16,1)
+			RETURN
+		END
+
+	DECLARE @合同编号 VARCHAR(50)
+	
+
+	DECLARE @当前时间 VARCHAR(30)
+	SET @当前时间 = CONVERT(VARCHAR(30), GETDATE(), 120)
+
+
+	DECLARE @原票据卖货时间 DATETIME
+	SELECT @原票据卖货时间 = 卖货时间 FROM cv_卖货单_新卖货单 WHERE 卖货单号 = @卖货单号
+
+	SET @净重大写 = dbo.f_num_chn数量(@净重)
+	SET @折合方数大写 = dbo.f_num_chn数量(@折合方数)
+	SET @实收金额大写 = dbo.f_num_chn金额(@实收金额)
+
+	BEGIN TRAN
+	BEGIN TRY
+		UPDATE cv_卖货单_新卖货单 SET
+			[车号]=@车号,
+			[品名]=@品名,
+			[规格]=@规格,
+			[运输单位]=@运输单位,
+			[托运单位]=@托运单位,
+			[存料地] =@存料地,
+			[收货地址]=@收货地址,
+			[收料员]=@收料员,
+			[送货人]=@送货人,
+			[司磅员]=@司磅员,
+			[卸货方式]=@卸货方式,
+			[结算方式]=@结算方式,
+			[轴数]=@轴数,
+			[道路运输证号]=@道路运输证号,
+			[从业资格证号]=@从业资格证号,
+			[驾驶证号]=@驾驶证号,
+			[净重大写]=@净重大写,
+			[折合方数大写]=@折合方数大写,
+			[实收金额大写]=@实收金额大写,
+			合同编号 = @合同编号,
+			任务编号 = @任务编号,
+			提单编号 = @提单编号,
+			运输方式 = @运输方式,
+			工程名称 = @工程名称,
+			使用部位 = @使用部位,
+			[备注]=@备注,
+			[卖货时间]=@卖货时间,
+			[进厂时间]=@进厂时间,
+			[出厂时间]=@出厂时间,
+			[毛重]=@毛重,
+			[皮重]=@皮重,
+			[净重]=@净重,
+			[折合方数]=@折合方数,
+			[单价]=@单价,
+			[金额]=@金额,
+			[实收金额]=@实收金额,
+			[载重]=@载重,
+			[运距] = @运距,
+			[修改时间]=@当前时间,
+			[修改人]=@创建人,
+			[修改端]=@创建端
+		WHERE 卖货单号=@卖货单号
+		
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, @卖货单号)
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  系统_时间戳 SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
+
+
+
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id(N'[dbo].[save卖货单新手工删除]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE [dbo].[save卖货单新手工删除]
+GO
+CREATE PROCEDURE [dbo].[save卖货单新手工删除]
+	@sn VARCHAR(50) = null,
+	@sql VARCHAR(8000) = null,
+	@replaceName VARCHAR(50) = null,
+
+	@卖货单号 varchar (50) =null,
+	@修改人 varchar (50) =null,
+	@修改端 varchar (50) =null,
+
+	@要求修改人 varchar (50) =null,
+	@出错原因 varchar (50) =null
+ AS
+	DECLARE @msg VARCHAR(200)
+	 ----------------判断时间戳是否已经使用过了-------------------------
+	IF exists(SELECT 1 FROM 系统_时间戳 WHERE sn=@sn)
+	BEGIN
+		SET @msg='此时间戳已经使用，请重新保存！'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	--------------------------------记录时间戳-------------------------------
+	INSERT INTO 系统_时间戳 (sn,dt,msg,code) VALUES (@sn, getdate(), '开始写入手动打印数据', 1)
+
+	IF ISNULL(@要求修改人, '') = ''
+	BEGIN
+		SET @msg='要求修改人   必须输入内容!'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+	
+	IF ISNULL(@出错原因, '') = ''
+	BEGIN
+		SET @msg='出错原因   必须输入内容!'
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+		RAISERROR (@msg,16,1)
+		RETURN
+	END
+
+	DECLARE @当前时间 VARCHAR(30)
+	SET @当前时间 = CONVERT(VARCHAR(30), GETDATE(), 120)
+
+	DECLARE @原票据卖货时间 DATETIME
+	SELECT @原票据卖货时间 = 卖货时间 FROM cv_卖货单_新卖货单 WHERE 卖货单号 = @卖货单号
+
+	BEGIN TRAN
+	BEGIN TRY
+		
+		DELETE FROM cv_卖货单_新卖货单 WHERE 卖货单号=@卖货单号
+
+		IF @sql IS NOT NULL and @sql != ''
+		BEGIN
+			SET @sql = REPLACE(@sql, @replaceName, @卖货单号)
+			EXEC (@sql)
+		END
+	END TRY
+
+	BEGIN CATCH
+		SET @msg = 'error:' + Error_message()
+	END CATCH
+	
+	IF CHARINDEX('error:',@msg) = 1
+	BEGIN
+		ROLLBACK TRAN
+		UPDATE  系统_时间戳 SET msg = @msg, code = 1 WHERE sn=@sn
+	END
+	ELSE
+	BEGIN
+		COMMIT TRAN
+		UPDATE  系统_时间戳 SET msg = @msg, code = 0 WHERE sn=@sn
+	END
+GO
