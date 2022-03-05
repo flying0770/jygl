@@ -4118,3 +4118,48 @@ ELSE
 	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '允许磅房修改出货平均分配等份'
 
 
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房1开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房2开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房3开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房4开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房5开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房6开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房7开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房8开启车牌识别'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9开启车牌识别')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9开启车牌识别', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9开启车牌识别'
+
