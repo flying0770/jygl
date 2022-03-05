@@ -4163,3 +4163,304 @@ IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9开启车牌识别')
 ELSE
 	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9开启车牌识别'
 
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '抓图保存路径')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('抓图保存路径', '\\server\抓图$', '\\server\抓图$,\\server\照片$', 'str')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '\\server\抓图$,\\server\照片$', 参数类型 = 'str' WHERE 项目 = '抓图保存路径'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '照片保存路径')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('照片保存路径', '\\server\抓图$', '\\server\抓图$,\\server\照片$', 'str')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '\\server\抓图$,\\server\照片$', 参数类型 = 'str' WHERE 项目 = '照片保存路径'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '称变化范围')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('称变化范围', '0', '0/0.02/0.05', 'num')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '0/0.02/0.05', 参数类型 = 'num' WHERE 项目 = '称变化范围'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '过磅仪表数显示放大')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('过磅仪表数显示放大', '是', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '过磅仪表数显示放大'
+
+IF @公司名称 IN('鑫贸通')
+BEGIN
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房1仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房2仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房3仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房4仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房5仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房6仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房7仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房8仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9仪表窗口显示起闸拍照按钮', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9仪表窗口显示起闸拍照按钮'
+
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房1起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2起闸拍照按钮背景颜色', '65280', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房2起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房3起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房4起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房5起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房6起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房7起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房8起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房9起闸拍照按钮背景颜色'
+END
+ELSE
+BEGIN
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房1仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房2仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房3仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房4仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房5仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房6仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房7仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房8仪表窗口显示起闸拍照按钮'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9仪表窗口显示起闸拍照按钮')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9仪表窗口显示起闸拍照按钮', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9仪表窗口显示起闸拍照按钮'
+
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房1起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房2起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房3起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房4起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房5起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房6起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房7起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房8起闸拍照按钮背景颜色'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9起闸拍照按钮背景颜色')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9起闸拍照按钮背景颜色', '-2147483633', '1,2,3', 'num')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '1,2,3', 参数类型 = 'num' WHERE 项目 = '磅房9起闸拍照按钮背景颜色'
+END
+
+IF @公司名称 IN('耀辉', '广联达', '鑫贸通', '鸿通')
+BEGIN
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房1退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房2退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房3退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房4退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房5退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房6退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房7退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房8退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9退货时是否起道闸', '是', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9退货时是否起道闸'
+END
+ELSE
+BEGIN
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房1退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房1退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房1退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房2退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房2退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房2退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房3退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房3退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房3退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房4退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房4退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房4退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房5退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房5退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房5退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房6退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房6退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房6退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房7退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房7退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房7退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房8退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房8退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房8退货时是否起道闸'
+
+	IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '磅房9退货时是否起道闸')
+		INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('磅房9退货时是否起道闸', '否', '是,否', 'bool')
+	ELSE
+		UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '磅房9退货时是否起道闸'
+END
