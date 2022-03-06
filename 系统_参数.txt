@@ -4486,4 +4486,18 @@ IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '卖货票据编号方式')
 ELSE
 	UPDATE cv_系统_参数设置  SET 选项 = '流水,时间', 参数类型 = 'str' WHERE 项目 = '卖货票据编号方式'
 
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '卖货帐务可否删除')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('卖货帐务可否删除', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '卖货帐务可否删除'
 
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '应付帐务可否删除')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('应付帐务可否删除', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '应付帐务可否删除'
+
+IF NOT EXISTS(SELECT * FROM cv_系统_参数设置  WHERE 项目 = '应收帐务可否删除')
+	INSERT INTO cv_系统_参数设置 (项目, 值,  选项, 参数类型) VALUES('应收帐务可否删除', '否', '是,否', 'bool')
+ELSE
+	UPDATE cv_系统_参数设置  SET 选项 = '是,否', 参数类型 = 'bool' WHERE 项目 = '应收帐务可否删除'
