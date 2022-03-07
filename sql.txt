@@ -180,6 +180,7 @@ CONSTRAINT [PK_ÏµÍ³_Êý¾Ý±íÓëÊÓÍ¼ÉèÖÃ] PRIMARY KEY CLUSTERED
 
 
 
+GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'µç×ÓÌ¨ÕË_³µÁ¾ÐÅÏ¢', N'dztz_che_liang_xin_xi', N'c200f0', N'', N'', N'×Ö·û', N'200', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
 GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'µç×ÓÌ¨ÕË_³µÁ¾ÐÅÏ¢', N'dztz_che_liang_xin_xi', N'c200f1', N'', N'', N'×Ö·û', N'200', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
@@ -5292,8 +5293,6 @@ INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×
 GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'½ø»õµ¥_×î´ó±àºÅ', N'jhd_zui_da_bian_hao', N'c50f5', N'', N'', N'×Ö·û', N'50', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
 GO
-INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'½ø»õµ¥_×î´ó±àºÅ', N'jhd_zui_da_bian_hao', N'id', N'id', N'', N'Êý×Ö', N'4', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
-GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'Âô»õµ¥_³µÁ¾ÐÅÏ¢', N'mhd_che_liang_xin_xi', N'c50f0', N'³µºÅ', N'', N'×Ö·û', N'50', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
 GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'Âô»õµ¥_³µÁ¾ÐÅÏ¢', N'mhd_che_liang_xin_xi', N'c50f1', N'ÖáÊý', N'', N'×Ö·û', N'50', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
@@ -6294,8 +6293,6 @@ GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'Âô»õµ¥_×î´ó±àºÅ', N'mhd_zui_da_bian_hao', N'c50f4', N'', N'', N'×Ö·û', N'50', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
 GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'Âô»õµ¥_×î´ó±àºÅ', N'mhd_zui_da_bian_hao', N'c50f5', N'', N'', N'×Ö·û', N'50', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
-GO
-INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'Âô»õµ¥_×î´ó±àºÅ', N'mhd_zui_da_bian_hao', N'id', N'id', N'', N'Êý×Ö', N'4', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
 GO
 INSERT [dbo].[ÉèÖÃ_Êý¾Ý±íÓëÊÓÍ¼] ([Ä£¿éÃû³Æ], [Êý¾Ý±íÃû³Æ], [×Ö¶ÎÃû³Æ], [ÖÐÎÄÃû×Ö], [Ó¢ÎÄÃû×Ö], [Êý¾ÝÀàÐÍ], [Êý¾Ý³¤¶È], [Ð¡], [´ó], [Ä¬ÈÏÖµ], [Ë÷Òý¿Ø¼þ], [¿Ø¼þÀàÐÍ], [¿Ø¼þ±êÌâ], [±ØÌî], [Ìí¼ÓÈ¨ÏÞ], [ÐÞ¸ÄÈ¨ÏÞ], [²é¿´È¨ÏÞ], [Ç¿ÖÆ×ª»»·½Ê½], [Ñ¡ÏîÀàÐÍ], [Ñ¡ÏîÀ´Ô´], [Ñ¡ÏîÄÚÈÝ], [Ë³Ðò], [Ê¹ÓÃ], [Ö»¶Á]) VALUES (N'ÈÎÎñ_½½×¢·½Ê½', N'rw_jiao_zhu_fang_shi', N'c50f0', N'½½×¢·½Ê½', N'', N'×Ö·û', N'50', N'', N'', N'', NULL, N'', N'', N'', N'', N'', N'', N'', N'', N'', N'', NULL, N'', N'')
 GO
@@ -9767,8 +9764,8 @@ GO
 
 CREATE TABLE [dbo].[fhd_fa_huo_dan_an_pai_sheng_chan_ming_xi](
 	[c50f0] [varchar](50) NOT NULL,
-	[c50f1] [varchar](50) NULL,
-	[c50f2] [varchar](50) NULL,
+	[c50f1] [varchar](50) NOT NULL,
+	[c50f2] [varchar](50) NOT NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL,
@@ -9801,7 +9798,15 @@ CREATE TABLE [dbo].[fhd_fa_huo_dan_an_pai_sheng_chan_ming_xi](
 	[nf11] [numeric](18, 2) NULL,
 	[nf12] [numeric](18, 2) NULL,
 	[nf13] [numeric](18, 2) NULL,
-	[nf14] [numeric](18, 2) NULL)
+	[nf14] [numeric](18, 2) NULL,
+ CONSTRAINT [PK_fhd_fa_huo_dan_an_pai_sheng_chan_ming_xi] PRIMARY KEY CLUSTERED 
+(
+	[c50f0] ASC,
+	[c50f1] ASC,
+	[c50f2] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
 
 
 IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'[dbo].[cv_·¢»õµ¥_·¢»õµ¥°²ÅÅÉú²úÃ÷Ï¸]'))
@@ -10223,14 +10228,15 @@ GO
 
 CREATE TABLE [dbo].[ht_he_tong_nei_rong_zui_da_bian_hao](
 	[c50f0] [varchar](50) NOT NULL,
-	[c50f1] [varchar](50) NULL,
+	[c50f1] [varchar](50) NOT NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL
  CONSTRAINT [PK_ht_he_tong_nei_rong_zui_da_bian_hao] PRIMARY KEY CLUSTERED 
 (
-	[c50f0] ASC
+	[c50f0] ASC,
+	[c50f1] ASC
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
@@ -12408,14 +12414,16 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[rw_ren_wu_
 
 CREATE TABLE [dbo].[rw_ren_wu_nei_rong_zui_da_bian_hao](
 	[c50f0] [varchar](50) NOT NULL,
-	[c50f1] [varchar](50) NULL,
+	[c50f1] [varchar](50) NOT NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL,
  CONSTRAINT [PK_rw_ren_wu_nei_rong_zui_da_bian_hao] PRIMARY KEY CLUSTERED 
 (
-	[c50f0] ASC
+	[c50f0] ASC,
+	[c50f1] ASC
+
 	
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
@@ -27683,14 +27691,15 @@ GO
 
 CREATE TABLE [dbo].[dd_beng_che_fa_che_dan_zui_da_bian_hao](
 	[c50f0] [varchar](50) NOT NULL,
-	[c50f1] [varchar](50) NULL,
+	[c50f1] [varchar](50) NOT NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL
  CONSTRAINT [PK_dd_beng_che_fa_che_dan_zui_da_bian_hao] PRIMARY KEY CLUSTERED 
 (
-	[c50f0] ASC
+	[c50f0] ASC,
+	[c50f1] ASC
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
@@ -28159,14 +28168,16 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[fhd_fa_huo
 
 CREATE TABLE [dbo].[fhd_fa_huo_dan_zui_da_bian_hao](
 	[c50f0] [varchar](50) NOT NULL,
-	[c50f1] [varchar](50) NULL,
+	[c50f1] [varchar](50) NOT NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL,
  CONSTRAINT [PK_fhd_fa_huo_dan_zui_da_bian_hao] PRIMARY KEY CLUSTERED 
 (
-	[c50f0] ASC
+	[c50f0] ASC,
+	[c50f1] ASC
+
 	
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
@@ -38258,16 +38269,16 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[jhd_zui_da
 	drop table [jhd_zui_da_bian_hao]
 	
 CREATE TABLE [dbo].[jhd_zui_da_bian_hao](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[c50f0] [varchar](50) NULL,
-	[c50f1] [varchar](50) NULL,
+	[c50f0] [varchar](50) NOT NULL,
+	[c50f1] [varchar](50) NOT NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL,
  CONSTRAINT [PK_jhd_zui_da_bian_hao] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+	[c50f0] ASC,
+	[c50f1] ASC
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
@@ -38284,7 +38295,7 @@ GO
     CREATE VIEW [dbo].[cv_½ø»õµ¥_×î´ó±àºÅ]
     AS
     SELECT 
-id AS [id],c50f0 AS [×î´ó±àºÅ],c50f1 AS [Ç°×º]
+c50f0 AS [×î´ó±àºÅ],c50f1 AS [Ç°×º]
     FROM dbo.jhd_zui_da_bian_hao
 
 GO
@@ -60001,16 +60012,17 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[mhd_zui_da
 	drop table [mhd_zui_da_bian_hao]
 	
 CREATE TABLE [dbo].[mhd_zui_da_bian_hao](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[c50f0] [varchar](50) NULL,
-	[c50f1] [varchar](50) NULL,
+	[c50f0] [varchar](50) NOT NULL,
+	[c50f1] [varchar](50) NOT NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
 	[c50f4] [varchar](50) NULL,
 	[c50f5] [varchar](50) NULL,
  CONSTRAINT [PK_mhd_zui_da_bian_hao] PRIMARY KEY CLUSTERED 
 (
-	[id] ASC
+	[c50f0] ASC,
+	[c50f1] ASC
+
 )WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 
@@ -60027,7 +60039,7 @@ GO
     CREATE VIEW [dbo].[cv_Âô»õµ¥_×î´ó±àºÅ]
     AS
     SELECT 
-id AS [id],c50f0 AS [×î´ó±àºÅ],c50f1 AS [Ç°×º]
+c50f0 AS [×î´ó±àºÅ],c50f1 AS [Ç°×º]
     FROM dbo.mhd_zui_da_bian_hao
 
 GO
