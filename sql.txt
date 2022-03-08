@@ -7956,6 +7956,11 @@ GO
 
 
 
+if not exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[a_系统_显示树]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	select * into a_系统_显示树 from 系统_显示树
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[系统_显示树]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	drop table [系统_显示树]
+
 if not exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[a_物资_卖货核对]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
 	select * into a_物资_卖货核对 from 物资_卖货核对
 if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[物资_卖货核对]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
@@ -64815,3 +64820,34 @@ CREATE PROCEDURE [dbo].[save卖货单新手工删除]
 		UPDATE  系统_时间戳 SET msg = @msg, code = 0 WHERE sn=@sn
 	END
 GO
+
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[系统_显示树]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	drop table [系统_显示树]
+
+go
+CREATE TABLE [dbo].[系统_显示树](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[编号] [int] NULL,
+	[显示标题] [varchar](50) NOT NULL,
+	[开发窗体标识] [varchar](50) NULL,
+	[父节点编号] [int] NULL,
+	[层数] [int] NULL,
+	[排列次序] [int] NULL,
+	[说明] [varchar](500) NULL,
+	[图标] [varchar](50) NULL,
+	[使用标志] [bit] NULL,
+	[ifShowWhenCheck] [bit] NULL,
+	[webShow] [bit] NULL,
+	[webSql] [varchar](2400) NULL,
+	[webOrder] [varchar](100) NULL,
+	[webDate] [varchar](200) NULL,
+	[webKey] [varchar](2400) NULL,
+	[webSubSql] [varchar](2400) NULL,
+	[webUrl] [varchar](200) NULL,
+	[showType] [varchar](20) NULL
+) ON [PRIMARY] 
+
+
+INSERT INTO 系统_显示树([编号],[显示标题],[开发窗体标识],[父节点编号],[层数],[排列次序],[说明],[图标],[使用标志],[ifShowWhenCheck],[webShow],[webSql],[webOrder],[webDate],[webKey],[webSubSql],[webUrl],[showType])
+SELECT [编号],[显示标题],[开发窗体标识],[父节点编号],[层数],[排列次序],[说明],CASE WHEN [图标] IS NULL THEN NULL ELSE 显示标题 + '.bmp' END,[使用标志],[ifShowWhenCheck],[webShow],[webSql],[webOrder],[webDate],[webKey],[webSubSql],[webUrl],[showType] FROM a_系统_显示树
