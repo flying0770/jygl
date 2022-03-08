@@ -8344,6 +8344,37 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Í¨ÓÃ_·¢»õµ
 
 
 
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ÏµÍ³_ÏÔÊ¾Ê÷]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+	drop table [ÏµÍ³_ÏÔÊ¾Ê÷]
+
+go
+CREATE TABLE [dbo].[ÏµÍ³_ÏÔÊ¾Ê÷](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[±àºÅ] [int] NULL,
+	[ÏÔÊ¾±êÌâ] [varchar](50) NOT NULL,
+	[¿ª·¢´°Ìå±êÊ¶] [varchar](50) NULL,
+	[¸¸½Úµã±àºÅ] [int] NULL,
+	[²ãÊý] [int] NULL,
+	[ÅÅÁÐ´ÎÐò] [int] NULL,
+	[ËµÃ÷] [varchar](500) NULL,
+	[Í¼±ê] [varchar](50) NULL,
+	[Ê¹ÓÃ±êÖ¾] [bit] NULL,
+	[ifShowWhenCheck] [bit] NULL,
+	[webShow] [bit] NULL,
+	[webSql] [varchar](2400) NULL,
+	[webOrder] [varchar](100) NULL,
+	[webDate] [varchar](200) NULL,
+	[webKey] [varchar](2400) NULL,
+	[webSubSql] [varchar](2400) NULL,
+	[webUrl] [varchar](200) NULL,
+	[showType] [varchar](20) NULL
+) ON [PRIMARY] 
+
+
+INSERT INTO ÏµÍ³_ÏÔÊ¾Ê÷([±àºÅ],[ÏÔÊ¾±êÌâ],[¿ª·¢´°Ìå±êÊ¶],[¸¸½Úµã±àºÅ],[²ãÊý],[ÅÅÁÐ´ÎÐò],[ËµÃ÷],[Í¼±ê],[Ê¹ÓÃ±êÖ¾],[ifShowWhenCheck],[webShow],[webSql],[webOrder],[webDate],[webKey],[webSubSql],[webUrl],[showType])
+SELECT [±àºÅ],[ÏÔÊ¾±êÌâ],[¿ª·¢´°Ìå±êÊ¶],[¸¸½Úµã±àºÅ],[²ãÊý],[ÅÅÁÐ´ÎÐò],[ËµÃ÷],CASE WHEN [Í¼±ê] IS NULL THEN NULL ELSE ÏÔÊ¾±êÌâ + '.bmp' END,[Ê¹ÓÃ±êÖ¾],[ifShowWhenCheck],[webShow],[webSql],[webOrder],[webDate],[webKey],[webSubSql],[webUrl],[showType] FROM a_ÏµÍ³_ÏÔÊ¾Ê÷
+
+
 if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Í¨ÓÃ_Éú²ú·½Á¿]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
 begin
 	if not exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[a_Í¨ÓÃ_Éú²ú·½Á¿]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
@@ -10853,12 +10884,14 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ÖÐ¼ä±í_ºÏÍ
 	drop table ÖÐ¼ä±í_ºÏÍ¬³¬·½ÉèÖÃ³õÊ¼»¯
 GO
 
+
 if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zjb_he_tong_chao_fang_she_zhi_chu_shi_hua]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
 	drop table [zjb_he_tong_chao_fang_she_zhi_chu_shi_hua]
 GO
 
 CREATE TABLE [dbo].[zjb_he_tong_chao_fang_she_zhi_chu_shi_hua](
-	[c50f0] [varchar](50) NOT NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[c50f0] [varchar](50) NULL,
 	[c50f1] [varchar](50) NULL,
 	[c50f2] [varchar](50) NULL,
 	[c50f3] [varchar](50) NULL,
@@ -10883,12 +10916,7 @@ CREATE TABLE [dbo].[zjb_he_tong_chao_fang_she_zhi_chu_shi_hua](
 	[nf1] [numeric](18, 2) NULL,
 	[nf2] [numeric](18, 2) NULL,
 	[nf3] [numeric](18, 2) NULL,
-	[nf4] [numeric](18, 2) NULL,
- CONSTRAINT [PK_zjb_he_tong_chao_fang_she_zhi_chu_shi_hua] PRIMARY KEY CLUSTERED 
-(
-	[c50f0] ASC
-)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
-) ON [PRIMARY]
+	[nf4] [numeric](18, 2) NULL)
 
 GO
 
@@ -10905,7 +10933,7 @@ GO
     CREATE VIEW [dbo].[cv_ÖÐ¼ä±í_ºÏÍ¬³¬·½ÉèÖÃ³õÊ¼»¯]
     AS
     SELECT 
-c50f0 AS ºÏÍ¬±àºÅ,c50f1 AS ÊÇ·ñ°´·½Á¿¿¨·½,c50f2 AS ÏÞÖÆ¿ªÊ¼Ê±¼ä,c50f3 AS ÊÇ·ñ°´Ê±¼ä¿¨·½,c50f4 AS ·Ö¹«Ë¾ÁÐ±í,df0 AS °´Ê±¼ä¿¨·½½áÊøÊ±¼ä,nf0 AS ±¨¾¯ÊýÁ¿,nf1 AS Í£Ö¹¹©»õÊýÁ¿
+id AS [id],c50f0 AS ºÏÍ¬±àºÅ,c50f1 AS ÊÇ·ñ°´·½Á¿¿¨·½,c50f2 AS ÏÞÖÆ¿ªÊ¼Ê±¼ä,c50f3 AS ÊÇ·ñ°´Ê±¼ä¿¨·½,c50f4 AS ·Ö¹«Ë¾ÁÐ±í,df0 AS °´Ê±¼ä¿¨·½½áÊøÊ±¼ä,nf0 AS ±¨¾¯ÊýÁ¿,nf1 AS Í£Ö¹¹©»õÊýÁ¿
     FROM dbo.zjb_he_tong_chao_fang_she_zhi_chu_shi_hua
 
 GO
@@ -10926,7 +10954,7 @@ GO
 CREATE TRIGGER [dbo].[TR_zjb_he_tong_chao_fang_she_zhi_chu_shi_hua_ADD] ON [dbo].[zjb_he_tong_chao_fang_she_zhi_chu_shi_hua] 
 FOR INSERT
 AS	
-	DELETE FROM zjb_he_tong_chao_fang_she_zhi_chu_shi_hua
+	DELETE FROM zjb_he_tong_chao_fang_she_zhi_chu_shi_hua WHERE ID NOT IN(SELECT ID FROM inserted)
 	-----------------------¸üÐÂ ¾­Óª_ºÏÍ¬  ----------------------
 	UPDATE cv_ºÏÍ¬_ºÏÍ¬ÄÚÈÝ 
 	SET [¿¨·½²ÎÊýÊÇ·ñÒÑÉèÖÃ]=CASE WHEN inserted.c50f1 ='ÊÇ' OR inserted.[c50f3] = 'ÊÇ' THEN 'ÊÇ' ELSE '·ñ' END,
@@ -10958,6 +10986,8 @@ AS
 	WHERE cv_ºÏÍ¬_ºÏÍ¬ÀÛ¼Æ.ºÏÍ¬±àºÅ = a.ºÏÍ¬±àºÅ
 
 GO
+
+
 
 
 
@@ -25690,7 +25720,7 @@ CREATE TRIGGER [dbo].[TR_zjb_yi_bu_shu_ju] ON [dbo].[zjb_yi_bu_shu_ju]
 FOR INSERT
 AS
 	--ÉùÃ÷ÓÎ±ê
-	DELETE FROM zjb_yi_bu_shu_ju
+	DELETE FROM zjb_yi_bu_shu_ju WHERE ID NOT IN(SELECT ID FROM inserted)
 	DECLARE @strSql VARCHAR(8000)
 	SELECT TOP 1 @strSql = sql  from inserted
 	IF (@strSql IS NOT NULL)
@@ -26168,11 +26198,13 @@ if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ÖÐ¼ä±í_µ÷¶
 	drop table ÖÐ¼ä±í_µ÷¶È_³µÁ¾µ÷¶ÈºÏ¼ÆË¢ÐÂ
 GO
 
+
 if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[zjb_diao_du_che_liang_diao_du_he_ji_shua_xin]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
 	drop table [zjb_diao_du_che_liang_diao_du_he_ji_shua_xin]
 GO
 CREATE TABLE [dbo].[zjb_diao_du_che_liang_diao_du_he_ji_shua_xin](
-	[c50f0] [varchar](50) NOT NULL,
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[c50f0] [varchar](50) NULL,
 	[c50f1] [varchar](50) NULL,
 	[c50f2] [varchar](50) NULL,
 	[if0] [bigint] NULL,
@@ -26198,7 +26230,7 @@ GO
     CREATE VIEW [dbo].[cv_ÖÐ¼ä±í_µ÷¶È³µÁ¾µ÷¶ÈºÏ¼ÆË¢ÐÂ]
     AS
     SELECT 
-c50f0 AS [ÄÚ²¿³µºÅ],nf0 AS [·¢³µ·½Á¿],nf1 AS [±³É°½¬·½Á¿],nf2 AS [Ç©ÊÕÁ¿]
+id AS [id],c50f0 AS [ÄÚ²¿³µºÅ],nf0 AS [·¢³µ·½Á¿],nf1 AS [±³É°½¬·½Á¿],nf2 AS [Ç©ÊÕÁ¿]
     FROM dbo.zjb_diao_du_che_liang_diao_du_he_ji_shua_xin
 
 GO
@@ -26210,9 +26242,11 @@ GO
 CREATE TRIGGER [dbo].[TR_zjb_diao_du_che_liang_diao_du_he_ji_shua_xin] ON [dbo].zjb_diao_du_che_liang_diao_du_he_ji_shua_xin 
 FOR INSERT
 AS	
-	DELETE FROM zjb_diao_du_che_liang_diao_du_he_ji_shua_xin
+	DELETE FROM zjb_diao_du_che_liang_diao_du_he_ji_shua_xin WHERE ID NOT IN(SELECT id FROM inserted)
 	UPDATE cv_µ÷¶È_³µÁ¾µ÷¶ÈºÏ¼Æ SET ·¢³µ·½Á¿=inserted.nf0,±³É°½¬·½Á¿=inserted.nf1,Ç©ÊÕÁ¿=inserted.nf2 FROM inserted WHERE cv_µ÷¶È_³µÁ¾µ÷¶ÈºÏ¼Æ.ÄÚ²¿³µºÅ = inserted.c50f0
 GO
+
+
 
 
 
@@ -60052,6 +60086,8 @@ GO
 INSERT INTO [cv_Âô»õµ¥_×î´ó±àºÅ]
 	SELECT ×î´ó±àºÅ,Ç°×º
 	FROM a_¹ý°õ_Âô»õµ¥×î´ó±àºÅ
+	where ×î´ó±àºÅ is NOT null AND Ç°×º IS NOT NULL
+
 
 DELETE FROM cv_ÏµÍ³_²ÎÊýÉèÖÃ WHERE ÏîÄ¿ like '%ÔÊÐí°õ·¿ÊäÈë%'
 
@@ -64821,33 +64857,3 @@ CREATE PROCEDURE [dbo].[saveÂô»õµ¥ÐÂÊÖ¹¤É¾³ý]
 	END
 GO
 
-
-if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ÏµÍ³_ÏÔÊ¾Ê÷]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
-	drop table [ÏµÍ³_ÏÔÊ¾Ê÷]
-
-go
-CREATE TABLE [dbo].[ÏµÍ³_ÏÔÊ¾Ê÷](
-	[id] [int] IDENTITY(1,1) NOT NULL,
-	[±àºÅ] [int] NULL,
-	[ÏÔÊ¾±êÌâ] [varchar](50) NOT NULL,
-	[¿ª·¢´°Ìå±êÊ¶] [varchar](50) NULL,
-	[¸¸½Úµã±àºÅ] [int] NULL,
-	[²ãÊý] [int] NULL,
-	[ÅÅÁÐ´ÎÐò] [int] NULL,
-	[ËµÃ÷] [varchar](500) NULL,
-	[Í¼±ê] [varchar](50) NULL,
-	[Ê¹ÓÃ±êÖ¾] [bit] NULL,
-	[ifShowWhenCheck] [bit] NULL,
-	[webShow] [bit] NULL,
-	[webSql] [varchar](2400) NULL,
-	[webOrder] [varchar](100) NULL,
-	[webDate] [varchar](200) NULL,
-	[webKey] [varchar](2400) NULL,
-	[webSubSql] [varchar](2400) NULL,
-	[webUrl] [varchar](200) NULL,
-	[showType] [varchar](20) NULL
-) ON [PRIMARY] 
-
-
-INSERT INTO ÏµÍ³_ÏÔÊ¾Ê÷([±àºÅ],[ÏÔÊ¾±êÌâ],[¿ª·¢´°Ìå±êÊ¶],[¸¸½Úµã±àºÅ],[²ãÊý],[ÅÅÁÐ´ÎÐò],[ËµÃ÷],[Í¼±ê],[Ê¹ÓÃ±êÖ¾],[ifShowWhenCheck],[webShow],[webSql],[webOrder],[webDate],[webKey],[webSubSql],[webUrl],[showType])
-SELECT [±àºÅ],[ÏÔÊ¾±êÌâ],[¿ª·¢´°Ìå±êÊ¶],[¸¸½Úµã±àºÅ],[²ãÊý],[ÅÅÁÐ´ÎÐò],[ËµÃ÷],CASE WHEN [Í¼±ê] IS NULL THEN NULL ELSE ÏÔÊ¾±êÌâ + '.bmp' END,[Ê¹ÓÃ±êÖ¾],[ifShowWhenCheck],[webShow],[webSql],[webOrder],[webDate],[webKey],[webSubSql],[webUrl],[showType] FROM a_ÏµÍ³_ÏÔÊ¾Ê÷
