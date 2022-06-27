@@ -5,7 +5,7 @@
  * Date: 2017-05-29
  * Time: 11:39
  */
-
+//修改了
 require_once 'Common.class.php';
 require_once 'funs.php';
 // 进货查询
